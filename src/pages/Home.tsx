@@ -1,0 +1,170 @@
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ArrowRight, Heart, Users, Sparkles } from "lucide-react";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import heroImage from "@/assets/hero-drama-therapy.jpg";
+
+const Home = () => {
+  return (
+    <div className="min-h-screen">
+      <Navigation />
+      
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url(${heroImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/80 to-background/95" />
+        </div>
+        
+        <div className="container mx-auto px-4 z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-lora font-bold mb-6 animate-fade-in-up text-primary">
+              Drama Therapy
+            </h1>
+            <p className="text-xl md:text-2xl mb-4 text-foreground animate-fade-in-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
+              Healing Through Creative Expression
+            </p>
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in-up [animation-delay:400ms] opacity-0 [animation-fill-mode:forwards]">
+              Professional expressive arts therapy services with Dr. Iman Kheil, Ph.D. 
+              in Expressive Therapies
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up [animation-delay:600ms] opacity-0 [animation-fill-mode:forwards]">
+              <Button asChild size="lg" className="text-lg transition-smooth hover:scale-105">
+                <Link to="/contact">
+                  Get Started <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="text-lg transition-smooth hover:scale-105">
+                <Link to="/drama-therapy">
+                  Learn More
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Preview Section */}
+      <section className="py-20 bg-secondary/20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl md:text-5xl font-lora font-bold mb-4 text-primary">
+              What We Offer
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Compassionate, creative therapy services tailored to your needs
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="shadow-medium hover:shadow-large transition-smooth hover:-translate-y-1 animate-gentle-scale">
+              <CardContent className="p-8">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                  <Heart className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-lora font-semibold mb-3">Individual Sessions</h3>
+                <p className="text-muted-foreground mb-4">
+                  One-on-one drama therapy sessions in a safe, supportive environment. 
+                  60-minute sessions focused on your personal healing journey.
+                </p>
+                <Button asChild variant="link" className="p-0 h-auto">
+                  <Link to="/services">
+                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-medium hover:shadow-large transition-smooth hover:-translate-y-1 animate-gentle-scale [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
+              <CardContent className="p-8">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                  <Users className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-lora font-semibold mb-3">Group Sessions</h3>
+                <p className="text-muted-foreground mb-4">
+                  Experience the power of shared creative expression. Group therapy 
+                  sessions that foster connection and collective healing.
+                </p>
+                <Button asChild variant="link" className="p-0 h-auto">
+                  <Link to="/services">
+                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-medium hover:shadow-large transition-smooth hover:-translate-y-1 animate-gentle-scale [animation-delay:400ms] opacity-0 [animation-fill-mode:forwards]">
+              <CardContent className="p-8">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                  <Sparkles className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-lora font-semibold mb-3">Creative Approach</h3>
+                <p className="text-muted-foreground mb-4">
+                  Using theater techniques, role play, storytelling, and movement 
+                  as powerful tools for emotional healing and growth.
+                </p>
+                <Button asChild variant="link" className="p-0 h-auto">
+                  <Link to="/drama-therapy">
+                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Philosophy Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <blockquote className="text-2xl md:text-3xl font-lora italic text-primary mb-6 animate-fade-in">
+              "If the possible is not working, then let's try the impossible."
+            </blockquote>
+            <p className="text-lg text-muted-foreground mb-8 animate-fade-in [animation-delay:200ms]">
+              When words alone are not enough, creativity opens new pathways for 
+              processing feelings and experiences in ways that support healing and growth.
+            </p>
+            <Button asChild size="lg" variant="outline" className="transition-smooth hover:scale-105">
+              <Link to="/about">
+                Meet Dr. Iman Kheil <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-hero text-primary-foreground">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-lora font-bold mb-6">
+              Ready to Begin Your Journey?
+            </h2>
+            <p className="text-lg md:text-xl mb-8 opacity-90">
+              Take the first step toward healing and personal growth through 
+              creative expression. Contact us today to schedule your session.
+            </p>
+            <Button asChild size="lg" variant="secondary" className="text-lg transition-smooth hover:scale-105">
+              <Link to="/contact">
+                Contact Me <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default Home;
