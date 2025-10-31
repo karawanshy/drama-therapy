@@ -38,7 +38,7 @@ const Home = () => {
                   Get Started <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="text-lg transition-smooth hover:scale-105">
+              <Button asChild variant="glass" size="lg" className="text-lg hover:scale-105">
                 <Link to="/drama-therapy">
                   Learn More
                 </Link>
@@ -177,8 +177,9 @@ const Home = () => {
             </p>
             <Button
               asChild
+              variant="glass"
               size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-10 py-7 shadow-xl hover:shadow-2xl transition-all duration-300"
+              className="font-semibold text-lg px-10 py-7 shadow-xl hover:shadow-2xl hover:scale-105"
             >
               <Link to="/contact">
                 Schedule a Session <ArrowRight className="ml-2" size={22} />
