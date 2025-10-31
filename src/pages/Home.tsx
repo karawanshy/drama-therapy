@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Heart, Users, Sparkles } from "lucide-react";
+import { ArrowRight, Heart, Users, Sparkles, User } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-drama-therapy.jpg";
@@ -131,7 +131,7 @@ const Home = () => {
             <Card className="shadow-medium hover:shadow-large transition-smooth hover:-translate-y-1 animate-gentle-scale">
               <CardContent className="p-8">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                  <Heart className="h-6 w-6 text-primary" />
+                  <User className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-lora font-semibold mb-3">Individual Sessions</h3>
                 <p className="text-muted-foreground mb-4">
