@@ -130,9 +130,6 @@ const Home = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="shadow-medium hover:shadow-large transition-smooth hover:-translate-y-1 animate-gentle-scale">
               <CardContent className="p-8">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                  <Heart className="h-6 w-6 text-primary" />
-                </div>
                 <h3 className="text-xl font-lora font-semibold mb-3">Individual Sessions</h3>
                 <p className="text-muted-foreground mb-4">
                   One-on-one sessions providing dedicated time to explore your personal journey through drama therapy.
@@ -173,8 +170,7 @@ const Home = () => {
               Ready to Begin Your Journey?
             </h2>
             <p className="text-lg md:text-xl mb-8 opacity-90">
-              Take the first step toward healing and personal growth through 
-              creative expression. Contact us today to schedule your session.
+              Take the first step towards healing and growth through creative expression.
             </p>
             <Button asChild size="lg" variant="secondary" className="text-lg transition-smooth hover:scale-105">
               <Link to="/contact">
