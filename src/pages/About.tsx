@@ -1,5 +1,6 @@
 import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
+import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/about-therapy.jpg";
 
 const About = () => {
@@ -16,7 +17,7 @@ const About = () => {
           <div className="prose prose-lg max-w-none fade-in-up">
             <div className="bg-card p-8 md:p-12 rounded-2xl shadow-lg mb-8">
               <p className="text-foreground leading-relaxed mb-6">
-                I am a drama therapist specializing in the use of expressive and creative arts to support emotional healing and personal growth. I hold a Ph.D. in Expressive Therapies from Lesley University in Cambridge, MA, a Master of Arts in Creative Arts Therapies with a concentration in Drama therapy, and a Bachelor of Arts in Psychology and Education.
+                I am a drama therapist specializing in the use of expressive and creative arts to support emotional healing and personal growth. I hold a <strong>Ph.D. in Expressive Therapies from Lesley University</strong> in Cambridge, MA, a <strong>Master of Arts in Creative Arts Therapies</strong> with a concentration in Drama therapy, and a <strong>Bachelor of Arts in Psychology and Education</strong>.
               </p>
 
               <p className="text-foreground leading-relaxed mb-6">
@@ -27,12 +28,50 @@ const About = () => {
                 Prior to relocating to the United States, I organized and facilitated community-based therapy workshops, and conducted individual and group therapy sessions across Palestine. In 2018, I also served as a Drama Therapy facilitator at the Creative Movement Therapy Association of India (CMTAI) conference.
               </p>
 
-              <div className="bg-accent/10 p-6 rounded-xl mt-8 border-l-4 border-accent">
-                <p className="text-foreground leading-relaxed italic">
-                  My therapeutic philosophy is grounded in the belief that the arts offer a profound and authentic way to reach the human heart, mind, and soul. I am passionate about promoting resilience and well-being through creative expression and am deeply committed to empowering individuals to overcome barriers and thrive.
+              <div className="bg-secondary/30 p-8 rounded-lg my-8">
+                <p className="text-xl font-lora italic text-primary text-center leading-relaxed">
+                  "My therapeutic philosophy is grounded in the belief that the arts offer a profound 
+                  and authentic way to reach the human heart, mind, and soul."
                 </p>
               </div>
+
+              <p className="text-foreground leading-relaxed">
+                I am passionate about promoting resilience and well-being through creative expression 
+                and am deeply committed to empowering individuals to overcome barriers and thrive.
+              </p>
             </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mt-8">
+            <Card className="shadow-medium">
+              <CardContent className="p-6 text-center">
+                <h3 className="font-lora text-xl font-semibold mb-2 text-primary">Education</h3>
+                <p className="text-sm text-muted-foreground">
+                  Ph.D. in Expressive Therapies<br />
+                  Lesley University
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-medium">
+              <CardContent className="p-6 text-center">
+                <h3 className="font-lora text-xl font-semibold mb-2 text-primary">Experience</h3>
+                <p className="text-sm text-muted-foreground">
+                  Individual & Group Therapy<br />
+                  Children, Youth & Adults
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-medium">
+              <CardContent className="p-6 text-center">
+                <h3 className="font-lora text-xl font-semibold mb-2 text-primary">Location</h3>
+                <p className="text-sm text-muted-foreground">
+                  Community Center<br />
+                  Malden, MA
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
