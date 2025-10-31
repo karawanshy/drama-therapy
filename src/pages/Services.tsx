@@ -26,11 +26,11 @@ const Services = () => {
                 <CardTitle className="text-2xl font-lora">Individual Sessions</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6 flex-grow flex flex-col">
-                <p className="text-muted-foreground leading-relaxed min-h-[4rem]">
+                <p className="text-muted-foreground leading-relaxed h-[6rem] flex items-start">
                   All individual sessions are scheduled for 60 minutes, providing dedicated one-on-one time to explore your personal journey through drama therapy.
                 </p>
                 
-                <div className="bg-secondary/30 p-6 rounded-lg min-h-[7rem] flex flex-col justify-center">
+                <div className="bg-secondary/30 p-6 rounded-lg h-[7.5rem] flex flex-col justify-center">
                   <div className="text-3xl font-lora font-bold text-primary mb-1">$150</div>
                   <div className="text-sm text-muted-foreground">for 60 minutes</div>
                 </div>
@@ -60,11 +60,11 @@ const Services = () => {
                 <CardTitle className="text-2xl font-lora">Group Sessions</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6 flex-grow flex flex-col">
-                <p className="text-muted-foreground leading-relaxed min-h-[4rem]">
+                <p className="text-muted-foreground leading-relaxed h-[6rem] flex items-start">
                   Experience the power of shared healing and creative expression in a supportive group environment.
                 </p>
                 
-                <div className="bg-secondary/30 p-6 rounded-lg min-h-[7rem] flex flex-col justify-center">
+                <div className="bg-secondary/30 p-6 rounded-lg h-[7.5rem] flex flex-col justify-center">
                   <p className="text-muted-foreground">
                     Contact me for information about group therapy and group therapy rates.
                   </p>
