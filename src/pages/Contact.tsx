@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import Navigation from "@/components/Navigation";
+import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -11,6 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, MapPin, Send } from "lucide-react";
+import contactImage from "@/assets/contact-curtains.jpg";
 
 const contactSchema = z.object({
   name: z.string().trim().min(2, { message: "Name must be at least 2 characters" }).max(100),
@@ -51,13 +53,14 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
+      <PageHeader
+        title="Contact"
+        subtitle="Get in touch to start your journey"
+        imageSrc={contactImage}
+      />
       
-      <main className="pt-32 pb-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-lora font-bold mb-8 text-primary text-center animate-fade-in-up">
-              Contact
-            </h1>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div className="max-w-5xl mx-auto">
 
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="shadow-large animate-gentle-scale">
@@ -173,16 +176,13 @@ const Contact = () => {
               </Card>
             </div>
 
-            <div className="mt-12 bg-secondary/20 p-8 rounded-2xl text-center">
-              <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                I look forward to hearing from you and supporting you on your journey toward 
-                healing and personal growth through drama therapy. Please feel free to reach 
-                out with any questions about my services or to schedule a session.
-              </p>
-            </div>
+          <div className="mt-12 bg-secondary/20 p-8 rounded-2xl text-center">
+            <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+              I'd love to hear from you. Whether you have questions about drama therapy or would like to schedule a session, feel free to reach out.
+            </p>
           </div>
         </div>
-      </main>
+      </div>
 
       <Footer />
     </div>
