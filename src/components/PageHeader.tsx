@@ -6,20 +6,24 @@ interface PageHeaderProps {
 
 const PageHeader = ({ title, subtitle, imageSrc }: PageHeaderProps) => {
   return (
-    <header className="relative h-[50vh] md:h-[60vh] overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${imageSrc})` }}
+    <header className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: `url(${imageSrc})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/70 via-primary/50 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/80 to-background/95" />
       </div>
       
-      <div className="relative h-full flex items-center justify-center text-center px-4">
-        <div className="max-w-4xl fade-in-up">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-lora font-bold text-white mb-4">
+      <div className="container mx-auto px-4 z-10">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-lora font-bold mb-6 animate-fade-in-up text-primary">
             {title}
           </h1>
-          <p className="text-xl md:text-2xl text-white/95 leading-relaxed">
+          <p className="text-xl md:text-2xl text-muted-foreground animate-fade-in-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
             {subtitle}
           </p>
         </div>
