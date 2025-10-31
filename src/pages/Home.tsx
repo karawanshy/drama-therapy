@@ -130,6 +130,9 @@ const Home = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="shadow-medium hover:shadow-large transition-smooth hover:-translate-y-1 animate-gentle-scale">
               <CardContent className="p-8">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                  <Heart className="h-6 w-6 text-primary" />
+                </div>
                 <h3 className="text-xl font-lora font-semibold mb-3">Individual Sessions</h3>
                 <p className="text-muted-foreground mb-4">
                   One-on-one sessions providing dedicated time to explore your personal journey through drama therapy.
@@ -163,18 +166,22 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-hero text-primary-foreground">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-lora font-bold mb-6">
+      <section className="py-20 md:py-32 bg-gradient-to-br from-primary to-primary/80">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center text-white fade-in-up">
+            <h2 className="text-4xl md:text-5xl font-lora font-bold mb-6">
               Ready to Begin Your Journey?
             </h2>
-            <p className="text-lg md:text-xl mb-8 opacity-90">
+            <p className="text-xl mb-10 text-white/90 leading-relaxed">
               Take the first step towards healing and growth through creative expression.
             </p>
-            <Button asChild size="lg" variant="secondary" className="text-lg transition-smooth hover:scale-105">
+            <Button
+              asChild
+              size="lg"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-10 py-7 shadow-xl hover:shadow-2xl transition-all duration-300"
+            >
               <Link to="/contact">
-                Schedule a Session <ArrowRight className="ml-2 h-5 w-5" />
+                Schedule a Session <ArrowRight className="ml-2" size={22} />
               </Link>
             </Button>
           </div>
