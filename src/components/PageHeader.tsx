@@ -16,7 +16,7 @@ const PageHeader = ({ title, subtitle, imageSrc, lightText = false }: PageHeader
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/80 to-background/95" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/20 to-background/30" />
       </div>
       
       <div className="container mx-auto px-4 z-10">
