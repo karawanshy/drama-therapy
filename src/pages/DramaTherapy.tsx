@@ -3,7 +3,7 @@ import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Theater, Heart, Users, Sparkles } from "lucide-react";
-import heroImage from "@/assets/hero-drama-therapy.jpg";
+import conceptImage from "@/assets/drama-therapy-concept.jpg";
 
 const DramaTherapy = () => {
   return (
@@ -12,7 +12,7 @@ const DramaTherapy = () => {
       <PageHeader
         title="What is Drama Therapy?"
         subtitle="Exploring healing through creative expression"
-        imageSrc={heroImage}
+        imageSrc={conceptImage}
       />
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
