@@ -1,38 +1,6 @@
-import { useEffect } from "react";
 import { Globe } from "lucide-react";
 
-declare global {
-  interface Window {
-    google: any;
-    googleTranslateElementInit: () => void;
-  }
-}
-
 const Footer = () => {
-  useEffect(() => {
-    // Load Google Translate script
-    const script = document.createElement('script');
-    script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    script.async = true;
-    document.body.appendChild(script);
-
-    // Initialize Google Translate
-    window.googleTranslateElementInit = () => {
-      new window.google.translate.TranslateElement(
-        {
-          pageLanguage: 'en',
-          includedLanguages: 'ar,es,fr,de,it,pt,ru,zh-CN,ja,ko,hi,fa,tr,pl,nl,sv',
-          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false,
-        },
-        'google_translate_element'
-      );
-    };
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
 
   return (
     <footer className="bg-secondary/30 border-t border-border mt-20">
@@ -54,7 +22,7 @@ const Footer = () => {
               <Globe className="h-4 w-4" />
               Translate
             </h3>
-            <div id="google_translate_element" className="mt-2"></div>
+            <p className="text-sm text-muted-foreground">Coming soon</p>
           </div>
         </div>
         <div className="text-center mt-8 pt-8 border-t border-border">

@@ -207,29 +207,4 @@ All colors MUST be HSL.
     }
   }
   
-  /* Google Translate Widget Styling */
-  #google_translate_element select {
-    @apply bg-background border border-border rounded-md px-3 py-2 text-sm text-foreground;
-  }
-
-  .goog-te-banner-frame {
-    display: none !important;
-  }
-
-  body {
-    top: 0 !important;
-  }
-
-  .goog-te-gadget {
-    font-family: inherit !important;
-    font-size: inherit !important;
-  }
-
-  .goog-te-gadget-simple {
-    @apply bg-background border border-border rounded-md px-3 py-2 text-sm !important;
-  }
-
-  .goog-te-menu-value span {
-    @apply text-foreground !important;
-  }
 }
