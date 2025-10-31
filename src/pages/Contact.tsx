@@ -62,12 +62,15 @@ const Contact = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="max-w-5xl mx-auto">
 
-            <div className="grid md:grid-cols-2 gap-8">
-              <Card className="shadow-large animate-gentle-scale">
-                <CardHeader>
-                  <CardTitle className="text-2xl font-lora">Get in Touch</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-6">
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="shadow-large animate-gentle-scale">
+              <CardHeader>
+                <CardTitle className="text-2xl font-lora">Let's Connect</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <p className="text-muted-foreground leading-relaxed">
+                  I'd love to hear from you. Whether you have questions about drama therapy or would like to schedule a session, feel free to reach out.
+                </p>
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <Mail className="h-6 w-6 text-primary" />
@@ -176,11 +179,6 @@ const Contact = () => {
               </Card>
             </div>
 
-          <div className="mt-12 bg-secondary/20 p-8 rounded-2xl text-center">
-            <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              I'd love to hear from you. Whether you have questions about drama therapy or would like to schedule a session, feel free to reach out.
-            </p>
-          </div>
         </div>
       </div>
 
