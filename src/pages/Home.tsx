@@ -177,7 +177,7 @@ const Home = () => {
             </p>
             <Button
               asChild
-              variant="glass"
+              variant="glass-white"
               size="lg"
               className="font-semibold text-lg px-10 py-7 shadow-xl hover:shadow-2xl hover:scale-105"
             >
