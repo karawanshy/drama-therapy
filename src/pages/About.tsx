@@ -1,3 +1,4 @@
+import Navigation from "@/components/Navigation";
 import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -6,6 +7,7 @@ import heroImage from "@/assets/about-therapy.jpg";
 const About = () => {
   return (
     <div className="min-h-screen">
+      <Navigation />
       <PageHeader
         title="About Me"
         subtitle="Drama Therapist, Ph.D. in Expressive Therapies"
