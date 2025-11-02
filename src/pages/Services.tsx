@@ -36,7 +36,7 @@ const Services = () => {
                 </p>
                 
                 <div className="bg-secondary/30 p-6 rounded-lg flex flex-col justify-center mt-auto">
-                  <div className="text-3xl font-lora font-bold text-primary mb-1">{t.price}</div>
+                  <div className="text-lg font-lora font-bold text-primary mb-1">{t.price}</div>
                   <div className="text-sm text-muted-foreground">{t.priceDesc}</div>
                 </div>
               </CardContent>
