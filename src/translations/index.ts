@@ -8,7 +8,7 @@ export const translations = {
       contact: 'Contact'
     },
     home: {
-      title: 'Drama Therapy, <span class="whitespace-nowrap">Dr. Iman Kheil</span>',
+      title: 'Drama Therapy <span class="whitespace-nowrap text-5xl md:text-6xl">Dr. Iman Kheil</span>',
       subtitle: 'Healing through creative expression and the transformative power of theater',
       learnMore: 'Learn More',
       whenWordsArentEnough: 'When Words Aren\'t Enough',
@@ -100,7 +100,7 @@ export const translations = {
       contact: 'التواصل'
     },
     home: {
-      title: 'العلاج بالدراما، <span class="whitespace-nowrap">د. ايمان كحيل</span>',
+      title: 'العلاج بالدراما <span class="whitespace-nowrap text-5xl md:text-6xl">د. ايمان كحيل</span>',
       subtitle: 'الشفاء من خلال التعبير الإبداعي والقوة التحويلية للمسرح',
       learnMore: 'اعرف المزيد',
       whenWordsArentEnough: 'عندما لا تكفي الكلمات',
