@@ -42,16 +42,35 @@ const Contact = () => {
   const onSubmit = async (data: ContactFormValues) => {
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: language === 'en' ? "Message sent!" : "تم إرسال الرسالة!",
-      description: language === 'en' ? "Thank you for reaching out. I'll get back to you soon." : "شكراً لتواصلك. سأرد عليك قريباً.",
-    });
-    
-    form.reset();
-    setIsSubmitting(false);
+    try {
+      const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-contact-email`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      toast({
+        title: language === 'en' ? "Message sent!" : "تم إرسال الرسالة!",
+        description: language === 'en' ? "Thank you for reaching out. I'll get back to you soon." : "شكراً لتواصلك. سأرد عليك قريباً.",
+      });
+      
+      form.reset();
+    } catch (error) {
+      console.error('Error sending message:', error);
+      toast({
+        title: language === 'en' ? "Error" : "خطأ",
+        description: language === 'en' ? "Failed to send message. Please try again." : "فشل إرسال الرسالة. يرجى المحاولة مرة أخرى.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
