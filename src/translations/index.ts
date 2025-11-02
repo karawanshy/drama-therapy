@@ -74,8 +74,8 @@ export const translations = {
       groupInfo: 'for information about group therapy and group therapy rates.',
       paymentInfo: 'Payment Information',
       paymentDesc: 'I offer flexible payment options for your convenience:',
-      payment1: 'Zelle and Venmo accepted',
-      payment2: 'Cash and checks accepted',
+      payment1: 'Zelle and Venmo',
+      payment2: 'Cash and checks',
       payment3: 'Insurance is not accepted'
     },
     contact: {
