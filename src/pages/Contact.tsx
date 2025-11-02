@@ -55,40 +55,14 @@ const Contact = () => {
       <Navigation />
       <PageHeader
         title="Contact"
-        subtitle="Let's discuss how drama therapy can support your growth"
+        subtitle="Reach out to discuss therapy options and schedule a session"
         imageSrc={contactImage}
       />
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="max-w-5xl mx-auto">
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="shadow-large animate-gentle-scale">
-              <CardHeader>
-                <CardTitle className="text-2xl font-lora">Payment Information</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  I offer flexible payment options for your convenience:
-                </p>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <span className="text-primary mr-3">•</span>
-                    <span>Zelle and Venmo accepted</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary mr-3">•</span>
-                    <span>Cash and checks accepted</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary mr-3">•</span>
-                    <span>Insurance not accepted</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-large animate-gentle-scale">
+          <Card className="shadow-large animate-gentle-scale max-w-2xl mx-auto">
                 <CardHeader>
                   <CardTitle className="text-2xl font-lora">Send a Message</CardTitle>
                 </CardHeader>
@@ -154,7 +128,6 @@ const Contact = () => {
                   </Form>
                 </CardContent>
               </Card>
-            </div>
 
         </div>
       </div>

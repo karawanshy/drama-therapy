@@ -27,7 +27,7 @@ const Home = () => {
         <div className="container mx-auto px-4 z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-lora font-bold mb-6 animate-fade-in-up text-primary">
-              Drama Therapy <span className="whitespace-nowrap">Dr. Iman Kheil</span>
+              Drama Therapy, <span className="whitespace-nowrap">Dr. Iman Kheil</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
               Healing through creative expression and the transformative power of theater

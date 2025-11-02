@@ -25,27 +25,15 @@ const Services = () => {
                 </div>
                 <CardTitle className="text-2xl font-lora">Individual Sessions</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6 flex-grow flex flex-col">
-                <p className="text-muted-foreground leading-relaxed h-[6rem] flex items-start">
+              <CardContent className="space-y-6">
+                <p className="text-muted-foreground leading-relaxed">
                   All individual sessions are scheduled for 60 minutes, providing dedicated one-on-one time to explore your personal journey through drama therapy.
                 </p>
                 
-                <div className="bg-secondary/30 p-6 rounded-lg h-[7.5rem] flex flex-col justify-center">
+                <div className="bg-secondary/30 p-6 rounded-lg flex flex-col justify-center">
                   <div className="text-3xl font-lora font-bold text-primary mb-1">$150</div>
                   <div className="text-sm text-muted-foreground">for 60 minutes</div>
                 </div>
-
-                <ul className="space-y-3 flex-grow">
-                  <li className="flex items-start">
-                    <span>Personalized therapeutic approach</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span>Safe and confidential environment</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span>Flexible scheduling options</span>
-                  </li>
-                </ul>
               </CardContent>
             </Card>
 
@@ -56,31 +44,44 @@ const Services = () => {
                 </div>
                 <CardTitle className="text-2xl font-lora">Group Sessions</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6 flex-grow flex flex-col">
-                <p className="text-muted-foreground leading-relaxed h-[6rem] flex items-start">
+              <CardContent className="space-y-6">
+                <p className="text-muted-foreground leading-relaxed">
                   Experience the power of shared healing and creative expression in a supportive group environment.
                 </p>
                 
-                <div className="bg-secondary/30 p-6 rounded-lg h-[7.5rem] flex flex-col justify-center">
+                <div className="bg-secondary/30 p-6 rounded-lg flex flex-col justify-center">
                   <p className="text-muted-foreground">
                     <a href="/contact" className="text-primary hover:underline font-semibold">Contact me</a> for information about group therapy and group therapy rates.
                   </p>
                 </div>
-
-                <ul className="space-y-3 flex-grow">
-                  <li className="flex items-start">
-                    <span>Supportive community environment</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span>Shared creative experiences</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span>Connection and collective growth</span>
-                  </li>
-                </ul>
               </CardContent>
             </Card>
           </div>
+
+          <Card className="shadow-medium mt-8 max-w-4xl mx-auto">
+            <CardHeader>
+              <CardTitle className="text-2xl font-lora">Payment Information</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                I offer flexible payment options for your convenience:
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="text-primary mr-3">•</span>
+                  <span>Zelle and Venmo accepted</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-3">•</span>
+                  <span>Cash and checks accepted</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-3">•</span>
+                  <span>Insurance not accepted</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
         </div>
       </div>
 
