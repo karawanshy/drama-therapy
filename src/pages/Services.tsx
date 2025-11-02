@@ -30,12 +30,12 @@ const Services = () => {
                 </div>
                 <CardTitle className="text-2xl font-lora">{t.individualSessions}</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <p className="text-muted-foreground leading-relaxed">
+              <CardContent className="space-y-6 flex flex-col flex-grow">
+                <p className="text-muted-foreground leading-relaxed flex-grow">
                   {t.individualSessionsDesc}
                 </p>
                 
-                <div className="bg-secondary/30 p-6 rounded-lg flex flex-col justify-center">
+                <div className="bg-secondary/30 p-6 rounded-lg flex flex-col justify-center mt-auto">
                   <div className="text-3xl font-lora font-bold text-primary mb-1">{t.price}</div>
                   <div className="text-sm text-muted-foreground">{t.priceDesc}</div>
                 </div>
@@ -49,12 +49,12 @@ const Services = () => {
                 </div>
                 <CardTitle className="text-2xl font-lora">{t.groupSessions}</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <p className="text-muted-foreground leading-relaxed">
+              <CardContent className="space-y-6 flex flex-col flex-grow">
+                <p className="text-muted-foreground leading-relaxed flex-grow">
                   {t.groupSessionsDesc}
                 </p>
                 
-                <div className="bg-secondary/30 p-6 rounded-lg flex flex-col justify-center">
+                <div className="bg-secondary/30 p-6 rounded-lg flex flex-col justify-center mt-auto">
                   <p className="text-muted-foreground">
                     <a href="/contact" className="text-primary hover:underline font-semibold">{t.contactMe}</a> {t.groupInfo}
                   </p>

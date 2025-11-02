@@ -127,16 +127,16 @@ const Home = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="shadow-medium hover:shadow-large transition-smooth hover:-translate-y-1 animate-gentle-scale">
-              <CardContent className="p-8">
+            <Card className="shadow-medium hover:shadow-large transition-smooth hover:-translate-y-1 animate-gentle-scale flex flex-col h-full">
+              <CardContent className="p-8 flex flex-col flex-grow">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-lora font-semibold mb-3">{t.individualSessions}</h3>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-muted-foreground mb-4 flex-grow">
                   {t.individualSessionsDesc}
                 </p>
-                <Button asChild variant="link" className="p-0 h-auto">
+                <Button asChild variant="link" className="p-0 h-auto mt-auto">
                   <Link to="/services">
                     {t.viewDetails} <ArrowRight className={`${language === 'ar' ? 'mr-2 rotate-180' : 'ml-2'} h-4 w-4`} />
                   </Link>
@@ -144,16 +144,16 @@ const Home = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-medium hover:shadow-large transition-smooth hover:-translate-y-1 animate-gentle-scale">
-              <CardContent className="p-8">
+            <Card className="shadow-medium hover:shadow-large transition-smooth hover:-translate-y-1 animate-gentle-scale flex flex-col h-full">
+              <CardContent className="p-8 flex flex-col flex-grow">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                   <Users className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-lora font-semibold mb-3">{t.groupSessions}</h3>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-muted-foreground mb-4 flex-grow">
                   {t.groupSessionsDesc}
                 </p>
-                <Button asChild variant="link" className="p-0 h-auto">
+                <Button asChild variant="link" className="p-0 h-auto mt-auto">
                   <Link to="/services">
                     {t.viewDetails} <ArrowRight className={`${language === 'ar' ? 'mr-2 rotate-180' : 'ml-2'} h-4 w-4`} />
                   </Link>
