@@ -69,15 +69,15 @@ const Services = () => {
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <span className="text-primary mr-3">•</span>
-                  <span>Zelle and Venmo accepted</span>
+                  <span><strong>Zelle</strong> and <strong>Venmo</strong> accepted</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-3">•</span>
-                  <span>Cash and checks accepted</span>
+                  <span><strong>Cash</strong> and <strong>checks</strong> accepted</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-3">•</span>
-                  <span>Insurance not accepted</span>
+                  <span>Insurance <strong>not</strong> accepted</span>
                 </li>
               </ul>
             </CardContent>
