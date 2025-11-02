@@ -35,9 +35,11 @@ const Services = () => {
                   {t.individualSessionsDesc}
                 </p>
                 
-                <div className="bg-secondary/30 p-6 rounded-lg flex flex-col justify-center mt-auto">
-                  <div className="text-lg font-lora font-bold text-primary mb-1">{t.price}</div>
-                  <div className="text-sm text-muted-foreground">{t.priceDesc}</div>
+                <div className="bg-secondary/30 p-6 rounded-lg flex items-center justify-center min-h-[80px] mt-auto">
+                  <div className="text-center">
+                    <div className="text-lg font-lora font-bold text-primary mb-1">{t.price}</div>
+                    <div className="text-sm text-muted-foreground">{t.priceDesc}</div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -54,8 +56,8 @@ const Services = () => {
                   {t.groupSessionsDesc}
                 </p>
                 
-                <div className="bg-secondary/30 p-6 rounded-lg flex flex-col justify-center mt-auto">
-                  <p className="text-muted-foreground">
+                <div className="bg-secondary/30 p-6 rounded-lg flex items-center justify-center min-h-[80px] mt-auto">
+                  <p className="text-muted-foreground text-center">
                     <a href="/contact" className="text-primary hover:underline font-semibold">{t.contactMe}</a> {t.groupInfo}
                   </p>
                 </div>

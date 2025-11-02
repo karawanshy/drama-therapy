@@ -30,23 +30,63 @@ const DramaTherapy = () => {
           <div className="bg-card p-8 md:p-12 rounded-2xl shadow-lg">
             <div className="prose prose-lg max-w-none space-y-6">
               <p className="text-lg leading-relaxed">
-                {t.intro1}
+                {language === 'en' ? (
+                  <>
+                    When words alone are not enough, <strong>creativity</strong> opens new pathways for processing feelings and experiences in ways that support healing and growth.
+                  </>
+                ) : (
+                  <>
+                    عندما لا تكفي الكلمات وحدها، يفتح <strong>الإبداع</strong> أبواباً جديدة لمعالجة المشاعر والتجارب بطرق تدعم الشفاء والنمو.
+                  </>
+                )}
               </p>
 
               <p className="text-lg leading-relaxed">
-                {t.intro2}
+                {language === 'en' ? (
+                  <>
+                    Drama therapy is a <strong>creative form of psychotherapy</strong> that uses theater techniques—such as <strong>role play, storytelling, improvisation, movement, and performance</strong>—as therapeutic tools. It is an <strong>active, experiential process</strong>. Instead of only talking about experiences in a traditional therapy setting, clients can explore feelings, relationships, and challenges through dramatic expression.
+                  </>
+                ) : (
+                  <>
+                    العلاج بالدراما هو <strong>شكل إبداعي من العلاج النفسي</strong> يستخدم تقنيات المسرح — مثل <strong>لعب الأدوار، وسرد القصص، والارتجال، والحركة، والأداء</strong> — كأدوات علاجية. وهو عملية <strong>نشِطة وتجريبية</strong>، حيث لا يقتصر الأمر على الحديث عن التجارب كما في العلاج التقليدي، بل يتم استكشاف المشاعر والعلاقات والتحديات من خلال التعبير الدرامي.
+                  </>
+                )}
               </p>
 
               <p className="text-lg leading-relaxed">
-                {t.intro3}
+                {language === 'en' ? (
+                  <>
+                    The goal is not to create a polished performance, but rather to <strong>encourage self-expression, healing, and personal growth</strong>. Drama therapy is not only for addressing psychological challenges — it is also a powerful tool for personal development.
+                  </>
+                ) : (
+                  <>
+                    الهدف ليس إنتاج عرض متقن، بل <strong>تشجيع التعبير الذاتي، والشفاء، والنمو الشخصي</strong>. العلاج بالدراما لا يُستخدم فقط لعلاج الاضطرابات النفسية، بل هو أيضاً أداة قوية للتطوير الذاتي.
+                  </>
+                )}
               </p>
 
               <p className="text-lg leading-relaxed">
-                {t.intro4}
+                {language === 'en' ? (
+                  <>
+                    Through <strong>role play, improvisation, and guided activities</strong>, clients can safely explore emotions, build coping strategies, and strengthen their sense of self.
+                  </>
+                ) : (
+                  <>
+                    من خلال <strong>لعب الأدوار والارتجال والأنشطة الموجهة</strong>، يمكن للعملاء استكشاف مشاعرهم بأمان، وبناء استراتيجيات للتأقلم، وتعزيز إحساسهم بالذات.
+                  </>
+                )}
               </p>
 
               <p className="text-lg leading-relaxed">
-                {t.intro5}
+                {language === 'en' ? (
+                  <>
+                    By entering a fictional world, individuals are able to view problems and conflicts from <strong>different perspectives</strong>, creating a unique mirror for self-exploration and reflection that can be both therapeutic and transformative.
+                  </>
+                ) : (
+                  <>
+                    ومن خلال الدخول في عالم تخيّلي، يمكنهم النظر إلى مشكلاتهم وصراعاتهم من <strong>زوايا جديدة</strong>، مما يخلق مرآة فريدة لاكتشاف الذات والتأمل، تكون علاجية وتحويلية في آنٍ واحد.
+                  </>
+                )}
               </p>
             </div>
           </div>

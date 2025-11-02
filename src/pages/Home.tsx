@@ -136,7 +136,7 @@ const Home = () => {
                 <p className="text-muted-foreground mb-4 flex-grow">
                   {t.individualSessionsDesc}
                 </p>
-                <Button asChild variant="link" className="p-0 h-auto mt-auto">
+                <Button asChild variant="link" className={`p-0 h-auto mt-auto ${language === 'ar' ? 'self-end' : 'self-start'}`}>
                   <Link to="/services">
                     {t.viewDetails} <ArrowRight className={`${language === 'ar' ? 'mr-2 rotate-180' : 'ml-2'} h-4 w-4`} />
                   </Link>
@@ -153,7 +153,7 @@ const Home = () => {
                 <p className="text-muted-foreground mb-4 flex-grow">
                   {t.groupSessionsDesc}
                 </p>
-                <Button asChild variant="link" className="p-0 h-auto mt-auto">
+                <Button asChild variant="link" className={`p-0 h-auto mt-auto ${language === 'ar' ? 'self-end' : 'self-start'}`}>
                   <Link to="/services">
                     {t.viewDetails} <ArrowRight className={`${language === 'ar' ? 'mr-2 rotate-180' : 'ml-2'} h-4 w-4`} />
                   </Link>
