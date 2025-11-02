@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import heroImage from "@/assets/about-therapy.jpg";
+import heroImage from "@/assets/about-therapy-new.jpg";
 
 const About = () => {
   return (
@@ -44,7 +44,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mt-8">
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
             <Card className="shadow-medium">
               <CardContent className="p-6 text-center">
                 <h3 className="font-lora text-xl font-semibold mb-2 text-primary">Education</h3>
@@ -61,16 +61,6 @@ const About = () => {
                 <p className="text-sm text-muted-foreground">
                   Individual & Group Therapy<br />
                   Children, Youth & Adults
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="shadow-medium">
-              <CardContent className="p-6 text-center">
-                <h3 className="font-lora text-xl font-semibold mb-2 text-primary">Location</h3>
-                <p className="text-sm text-muted-foreground">
-                  Community Center<br />
-                  Malden, MA
                 </p>
               </CardContent>
             </Card>

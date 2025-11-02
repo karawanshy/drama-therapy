@@ -37,15 +37,12 @@ const Services = () => {
 
                 <ul className="space-y-3 flex-grow">
                   <li className="flex items-start">
-                    <span className="text-primary mr-3">✓</span>
                     <span>Personalized therapeutic approach</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-primary mr-3">✓</span>
                     <span>Safe and confidential environment</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-primary mr-3">✓</span>
                     <span>Flexible scheduling options</span>
                   </li>
                 </ul>
@@ -66,21 +63,18 @@ const Services = () => {
                 
                 <div className="bg-secondary/30 p-6 rounded-lg h-[7.5rem] flex flex-col justify-center">
                   <p className="text-muted-foreground">
-                    Contact me for information about group therapy and group therapy rates.
+                    <a href="/contact" className="text-primary hover:underline font-semibold">Contact me</a> for information about group therapy and group therapy rates.
                   </p>
                 </div>
 
                 <ul className="space-y-3 flex-grow">
                   <li className="flex items-start">
-                    <span className="text-primary mr-3">✓</span>
                     <span>Supportive community environment</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-primary mr-3">✓</span>
                     <span>Shared creative experiences</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-primary mr-3">✓</span>
                     <span>Connection and collective growth</span>
                   </li>
                 </ul>

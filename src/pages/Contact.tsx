@@ -55,7 +55,7 @@ const Contact = () => {
       <Navigation />
       <PageHeader
         title="Contact"
-        subtitle="Get in touch to start your journey"
+        subtitle="Let's discuss how drama therapy can support your growth"
         imageSrc={contactImage}
       />
       
@@ -65,53 +65,30 @@ const Contact = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="shadow-large animate-gentle-scale">
               <CardHeader>
-                <CardTitle className="text-2xl font-lora">Let's Connect</CardTitle>
+                <CardTitle className="text-2xl font-lora">Payment Information</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <p className="text-muted-foreground leading-relaxed">
-                  I'd love to hear from you. Whether you have questions about drama therapy or would like to schedule a session, feel free to reach out.
+              <CardContent className="space-y-4">
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  I offer flexible payment options for your convenience:
                 </p>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Mail className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-1">Email</h3>
-                      <p className="text-muted-foreground text-sm">
-                        [email address to be provided]@gmail.com
-                      </p>
-                    </div>
-                  </div>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-3">•</span>
+                    <span>Zelle and Venmo accepted</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-3">•</span>
+                    <span>Cash and checks accepted</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-3">•</span>
+                    <span>Insurance not accepted</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <MapPin className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-1">Location</h3>
-                      <p className="text-muted-foreground text-sm">
-                        Malden, MA<br />
-                        Community Center
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="bg-secondary/30 p-6 rounded-lg mt-8">
-                    <h3 className="font-lora text-xl font-semibold mb-3 text-primary">
-                      Iman Kheil, Ph.D
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Drama Therapist
-                    </p>
-                    <p className="text-sm text-muted-foreground mt-4">
-                      Ph.D. in Expressive Therapies<br />
-                      Lesley University, Cambridge, MA
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="shadow-large animate-gentle-scale [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
+            <Card className="shadow-large animate-gentle-scale">
                 <CardHeader>
                   <CardTitle className="text-2xl font-lora">Send a Message</CardTitle>
                 </CardHeader>
@@ -170,7 +147,7 @@ const Contact = () => {
                         size="lg"
                         disabled={isSubmitting}
                       >
-                        {isSubmitting ? "Sending..." : "Send Message"}
+                        {isSubmitting ? "Sending..." : "Contact Me"}
                         <Send className="ml-2 h-4 w-4" />
                       </Button>
                     </form>

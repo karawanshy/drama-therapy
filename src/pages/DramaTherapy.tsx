@@ -11,7 +11,6 @@ const DramaTherapy = () => {
       <Navigation />
       <PageHeader
         title="What is Drama Therapy?"
-        subtitle="Exploring healing through creative expression"
         imageSrc={conceptImage}
       />
       
@@ -43,34 +42,6 @@ const DramaTherapy = () => {
                 healing, and personal growth. Drama therapy is not only for addressing psychological 
                 challenges — it is also a powerful tool for personal development.
               </p>
-
-              <div className="bg-secondary/30 p-8 rounded-lg my-8">
-                <h3 className="text-2xl font-lora font-semibold mb-4 text-primary">
-                  Benefits of Drama Therapy
-                </h3>
-                <ul className="space-y-3 text-lg">
-                  <li className="flex items-start">
-                    <span className="text-primary mr-3">•</span>
-                    Deepen self-understanding and self-awareness
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary mr-3">•</span>
-                    Strengthen relationships and communication skills
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary mr-3">•</span>
-                    Build effective coping strategies
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary mr-3">•</span>
-                    Explore emotions in a safe, supportive environment
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary mr-3">•</span>
-                    Gain new perspectives on personal challenges
-                  </li>
-                </ul>
-              </div>
 
               <p className="text-lg leading-relaxed">
                 Through role play, improvisation, and guided activities, clients can safely explore 

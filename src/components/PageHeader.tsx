@@ -1,6 +1,6 @@
 interface PageHeaderProps {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   imageSrc: string;
 }
 
@@ -23,9 +23,11 @@ const PageHeader = ({ title, subtitle, imageSrc }: PageHeaderProps) => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-lora font-bold mb-6 animate-fade-in-up text-primary">
             {title}
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground animate-fade-in-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
-            {subtitle}
-          </p>
+          {subtitle && (
+            <p className="text-xl md:text-2xl text-muted-foreground animate-fade-in-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
+              {subtitle}
+            </p>
+          )}
         </div>
       </div>
     </header>

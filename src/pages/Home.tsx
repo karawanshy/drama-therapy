@@ -27,17 +27,12 @@ const Home = () => {
         <div className="container mx-auto px-4 z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-lora font-bold mb-6 animate-fade-in-up text-primary">
-              Drama Therapy with <span className="whitespace-nowrap">Dr. Iman Kheil</span>
+              Drama Therapy <span className="whitespace-nowrap">Dr. Iman Kheil</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
               Healing through creative expression and the transformative power of theater
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up [animation-delay:600ms] opacity-0 [animation-fill-mode:forwards]">
-              <Button asChild size="lg" className="text-lg transition-smooth hover:scale-105">
-                <Link to="/contact">
-                  Get Started <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
+            <div className="flex justify-center animate-fade-in-up [animation-delay:600ms] opacity-0 [animation-fill-mode:forwards]">
               <Button asChild variant="glass" size="lg" className="text-lg hover:scale-105 border-[3px] shadow-[0_0_20px_rgba(66,99,130,0.3)] hover:shadow-[0_0_30px_rgba(66,99,130,0.5)]">
                 <Link to="/drama-therapy">
                   Learn More
@@ -120,7 +115,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl md:text-5xl font-lora font-bold mb-4 text-primary">
-              How I Can Help
+              How Can I Help
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Personalized therapy sessions tailored to your unique journey
@@ -145,7 +140,7 @@ const Home = () => {
               </CardContent>
             </Card>
 
-            <Card className="shadow-medium hover:shadow-large transition-smooth hover:-translate-y-1 animate-gentle-scale [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
+            <Card className="shadow-medium hover:shadow-large transition-smooth hover:-translate-y-1 animate-gentle-scale">
               <CardContent className="p-8">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                   <Users className="h-6 w-6 text-primary" />

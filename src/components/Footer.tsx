@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="font-lora font-bold text-lg mb-2 text-primary">Dr. Iman Kheil</h3>
             <p className="text-sm text-muted-foreground">Drama Therapist, Ph.D.</p>
-            <p className="text-sm text-muted-foreground">Expressive Arts Therapy</p>
+            <p className="text-sm text-muted-foreground">Expressive Therapies</p>
             <p className="text-sm text-muted-foreground">Malden, MA</p>
           </div>
           <div>
