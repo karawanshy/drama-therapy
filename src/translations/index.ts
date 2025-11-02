@@ -158,7 +158,7 @@ export const translations = {
       subtitle: 'جلسات علاج بالدراما احترافية مصممة خصيصاً لرحلتك',
       individualSessions: 'جلسات فردية',
       individualSessionsDesc: 'مدة الجلسة 60 دقيقة، توفر وقتاً فردياً مخصصاً لاستكشاف رحلتك الشخصية من خلال العلاج بالدراما.',
-      price: '150 دولار',
+      price: '$150',
       priceDesc: 'لمدة 60 دقيقة',
       groupSessions: 'جلسات جماعية',
       groupSessionsDesc: 'اختبر قوة الشفاء المشترك والتعبير الإبداعي في بيئة جماعية داعمة.',
