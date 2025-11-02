@@ -55,7 +55,6 @@ const Contact = () => {
       <Navigation />
       <PageHeader
         title="Contact"
-        subtitle="Reach out to discuss therapy options and schedule a session"
         imageSrc={contactImage}
       />
       
