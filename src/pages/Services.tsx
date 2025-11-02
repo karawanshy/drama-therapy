@@ -3,15 +3,20 @@ import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { User, Users } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/translations";
 import servicesImage from "@/assets/services-header.jpg";
 
 const Services = () => {
+  const { language } = useLanguage();
+  const t = translations[language].services;
+
   return (
     <div className="min-h-screen">
       <Navigation />
       <PageHeader
-        title="Services"
-        subtitle="Professional drama therapy sessions tailored to your journey"
+        title={t.title}
+        subtitle={t.subtitle}
         imageSrc={servicesImage}
       />
       
@@ -23,16 +28,16 @@ const Services = () => {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                   <User className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="text-2xl font-lora">Individual Sessions</CardTitle>
+                <CardTitle className="text-2xl font-lora">{t.individualSessions}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 <p className="text-muted-foreground leading-relaxed">
-                  All individual sessions are scheduled for 60 minutes, providing dedicated one-on-one time to explore your personal journey through drama therapy.
+                  {t.individualSessionsDesc}
                 </p>
                 
                 <div className="bg-secondary/30 p-6 rounded-lg flex flex-col justify-center">
-                  <div className="text-3xl font-lora font-bold text-primary mb-1">$150</div>
-                  <div className="text-sm text-muted-foreground">for 60 minutes</div>
+                  <div className="text-3xl font-lora font-bold text-primary mb-1">{t.price}</div>
+                  <div className="text-sm text-muted-foreground">{t.priceDesc}</div>
                 </div>
               </CardContent>
             </Card>
@@ -42,16 +47,16 @@ const Services = () => {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                   <Users className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="text-2xl font-lora">Group Sessions</CardTitle>
+                <CardTitle className="text-2xl font-lora">{t.groupSessions}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
                 <p className="text-muted-foreground leading-relaxed">
-                  Experience the power of shared healing and creative expression in a supportive group environment.
+                  {t.groupSessionsDesc}
                 </p>
                 
                 <div className="bg-secondary/30 p-6 rounded-lg flex flex-col justify-center">
                   <p className="text-muted-foreground">
-                    <a href="/contact" className="text-primary hover:underline font-semibold">Contact me</a> for information about group therapy and group therapy rates.
+                    <a href="/contact" className="text-primary hover:underline font-semibold">{t.contactMe}</a> {t.groupInfo}
                   </p>
                 </div>
               </CardContent>
@@ -60,24 +65,24 @@ const Services = () => {
 
           <Card className="shadow-medium mt-8 max-w-4xl mx-auto">
             <CardHeader>
-              <CardTitle className="text-2xl font-lora">Payment Information</CardTitle>
+              <CardTitle className="text-2xl font-lora">{t.paymentInfo}</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-muted-foreground leading-relaxed mb-4">
-                I offer flexible payment options for your convenience:
+                {t.paymentDesc}
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <span className="text-primary mr-3">•</span>
-                  <span><strong>Zelle</strong> and <strong>Venmo</strong> accepted</span>
+                  <span dangerouslySetInnerHTML={{ __html: t.payment1.replace('Zelle', '<strong>Zelle</strong>').replace('Venmo', '<strong>Venmo</strong>') }} />
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-3">•</span>
-                  <span><strong>Cash</strong> and <strong>checks</strong> accepted</span>
+                  <span dangerouslySetInnerHTML={{ __html: t.payment2.replace('Cash', '<strong>Cash</strong>').replace('checks', '<strong>checks</strong>').replace('النقد', '<strong>النقد</strong>').replace('الشيكات', '<strong>الشيكات</strong>') }} />
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-3">•</span>
-                  <span>Insurance <strong>not</strong> accepted</span>
+                  <span dangerouslySetInnerHTML={{ __html: t.payment3.replace('not', '<strong>not</strong>').replace('لا', '<strong>لا</strong>') }} />
                 </li>
               </ul>
             </CardContent>

@@ -3,14 +3,19 @@ import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Theater, Heart, Users, Sparkles } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/translations";
 import conceptImage from "@/assets/drama-therapy-concept.jpg";
 
 const DramaTherapy = () => {
+  const { language } = useLanguage();
+  const t = translations[language].dramatherapy;
+
   return (
     <div className="min-h-screen">
       <Navigation />
       <PageHeader
-        title="What is Drama Therapy?"
+        title={t.title}
         imageSrc={conceptImage}
       />
       
@@ -18,40 +23,30 @@ const DramaTherapy = () => {
         <div className="max-w-4xl mx-auto space-y-8 fade-in-up">
           <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-8 md:p-12 rounded-2xl shadow-lg">
             <p className="text-xl md:text-2xl font-lora text-primary text-center italic leading-relaxed">
-              "If the possible is not working, then let's try the impossible."
+              {t.quote}
             </p>
           </div>
 
           <div className="bg-card p-8 md:p-12 rounded-2xl shadow-lg">
             <div className="prose prose-lg max-w-none space-y-6">
               <p className="text-lg leading-relaxed">
-                When words alone are not enough, creativity opens new pathways for processing 
-                feelings and experiences in ways that support healing and growth.
+                {t.intro1}
               </p>
 
               <p className="text-lg leading-relaxed">
-                Drama therapy is a creative form of psychotherapy that uses theater techniques—such 
-                as role play, storytelling, improvisation, movement, and performance—as therapeutic 
-                tools. It is an active, experiential process. Instead of only talking about experiences 
-                in a traditional therapy setting, clients can explore feelings, relationships, and 
-                challenges through dramatic expression.
+                {t.intro2}
               </p>
 
               <p className="text-lg leading-relaxed">
-                The goal is not to create a polished performance, but rather to encourage self-expression, 
-                healing, and personal growth. Drama therapy is not only for addressing psychological 
-                challenges — it is also a powerful tool for personal development.
+                {t.intro3}
               </p>
 
               <p className="text-lg leading-relaxed">
-                Through role play, improvisation, and guided activities, clients can safely explore 
-                emotions, build coping strategies, and strengthen their sense of self.
+                {t.intro4}
               </p>
 
               <p className="text-lg leading-relaxed">
-                By entering a fictional world, individuals are able to view problems and conflicts from 
-                different perspectives, creating a unique mirror for self-exploration and reflection that 
-                can be both therapeutic and transformative.
+                {t.intro5}
               </p>
             </div>
           </div>
@@ -66,10 +61,9 @@ const DramaTherapy = () => {
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                     <Theater className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-lora font-semibold mb-3">Creative Expression</h3>
+                  <h3 className="text-xl font-lora font-semibold mb-3">{t.creativeExpression}</h3>
                   <p className="text-muted-foreground">
-                    Use theater techniques like role play, storytelling, and improvisation 
-                    to express feelings that words cannot capture.
+                    {t.creativeExpressionDesc}
                   </p>
                 </CardContent>
               </Card>
@@ -79,10 +73,9 @@ const DramaTherapy = () => {
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                     <Heart className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-lora font-semibold mb-3">Emotional Healing</h3>
+                  <h3 className="text-xl font-lora font-semibold mb-3">{t.emotionalHealing}</h3>
                   <p className="text-muted-foreground">
-                    Process trauma, grief, and difficult emotions in a safe, 
-                    supportive therapeutic environment.
+                    {t.emotionalHealingDesc}
                   </p>
                 </CardContent>
               </Card>
@@ -92,10 +85,9 @@ const DramaTherapy = () => {
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                     <Users className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-lora font-semibold mb-3">Relationship Building</h3>
+                  <h3 className="text-xl font-lora font-semibold mb-3">{t.relationshipBuilding}</h3>
                   <p className="text-muted-foreground">
-                    Develop stronger communication skills and deepen connections 
-                    with yourself and others.
+                    {t.relationshipBuildingDesc}
                   </p>
                 </CardContent>
               </Card>
@@ -105,10 +97,9 @@ const DramaTherapy = () => {
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                     <Sparkles className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-lora font-semibold mb-3">Personal Growth</h3>
+                  <h3 className="text-xl font-lora font-semibold mb-3">{t.personalGrowth}</h3>
                   <p className="text-muted-foreground">
-                    Discover new perspectives, build resilience, and strengthen 
-                    your sense of self and purpose.
+                    {t.personalGrowthDesc}
                   </p>
                 </CardContent>
               </Card>

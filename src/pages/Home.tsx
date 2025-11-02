@@ -4,9 +4,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Heart, Users, Sparkles, User } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/translations";
 import heroImage from "@/assets/hero-drama-therapy.jpg";
 
 const Home = () => {
+  const { language } = useLanguage();
+  const t = translations[language].home;
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -27,15 +32,15 @@ const Home = () => {
         <div className="container mx-auto px-4 z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-lora font-bold mb-6 animate-fade-in-up text-primary">
-              Drama Therapy, <span className="whitespace-nowrap">Dr. Iman Kheil</span>
+              {t.title}
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
-              Healing through creative expression and the transformative power of theater
+              {t.subtitle}
             </p>
             <div className="flex justify-center animate-fade-in-up [animation-delay:600ms] opacity-0 [animation-fill-mode:forwards]">
               <Button asChild variant="glass" size="lg" className="text-lg hover:scale-105 border-[3px] shadow-[0_0_20px_rgba(66,99,130,0.3)] hover:shadow-[0_0_30px_rgba(66,99,130,0.5)]">
                 <Link to="/drama-therapy">
-                  Learn More
+                  {t.learnMore}
                 </Link>
               </Button>
             </div>
@@ -48,11 +53,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-lora font-bold mb-6 text-primary">
-              When Words Aren't Enough
+              {t.whenWordsArentEnough}
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground">
-              Drama therapy uses the healing power of creative expression to help you explore emotions, 
-              build resilience, and discover new pathways to personal growth.
+              {t.whenWordsDesc}
             </p>
           </div>
 
@@ -62,9 +66,9 @@ const Home = () => {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                   <Sparkles className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-lora font-semibold mb-3">Creative Expression</h3>
+                <h3 className="text-xl font-lora font-semibold mb-3">{t.creativeExpression}</h3>
                 <p className="text-muted-foreground">
-                  Use theater techniques like role play, storytelling, and improvisation to explore your feelings safely.
+                  {t.creativeExpressionDesc}
                 </p>
               </CardContent>
             </Card>
@@ -74,9 +78,9 @@ const Home = () => {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                   <Heart className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-lora font-semibold mb-3">Emotional Healing</h3>
+                <h3 className="text-xl font-lora font-semibold mb-3">{t.emotionalHealing}</h3>
                 <p className="text-muted-foreground">
-                  Process experiences and emotions in ways that support genuine healing and personal transformation.
+                  {t.emotionalHealingDesc}
                 </p>
               </CardContent>
             </Card>
@@ -86,9 +90,9 @@ const Home = () => {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                   <Users className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-lora font-semibold mb-3">Personal Growth</h3>
+                <h3 className="text-xl font-lora font-semibold mb-3">{t.personalGrowth}</h3>
                 <p className="text-muted-foreground">
-                  Strengthen self-awareness, deepen relationships, and build coping strategies for life's challenges.
+                  {t.personalGrowthDesc}
                 </p>
               </CardContent>
             </Card>
@@ -101,10 +105,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <blockquote className="text-2xl md:text-3xl font-lora italic text-primary mb-3 animate-fade-in">
-              "If the possible is not working, then let's try the impossible."
+              {t.quote}
             </blockquote>
             <p className="text-lg text-muted-foreground animate-fade-in [animation-delay:200ms]">
-              — Dr. Iman Kheil
+              {language === 'en' ? '— Dr. Iman Kheil' : '— د. ايمان كحيل'}
             </p>
           </div>
         </div>
@@ -115,10 +119,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl md:text-5xl font-lora font-bold mb-4 text-primary">
-              How Can I Help
+              {t.howCanIHelp}
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Personalized therapy sessions tailored to your unique journey
+              {t.howCanIHelpDesc}
             </p>
           </div>
 
@@ -128,13 +132,13 @@ const Home = () => {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                   <User className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-lora font-semibold mb-3">Individual Sessions</h3>
+                <h3 className="text-xl font-lora font-semibold mb-3">{t.individualSessions}</h3>
                 <p className="text-muted-foreground mb-4">
-                  One-on-one sessions providing dedicated time to explore your personal journey through drama therapy.
+                  {t.individualSessionsDesc}
                 </p>
                 <Button asChild variant="link" className="p-0 h-auto">
                   <Link to="/services">
-                    View Details <ArrowRight className="ml-2 h-4 w-4" />
+                    {t.viewDetails} <ArrowRight className={`${language === 'ar' ? 'mr-2 rotate-180' : 'ml-2'} h-4 w-4`} />
                   </Link>
                 </Button>
               </CardContent>
@@ -145,13 +149,13 @@ const Home = () => {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
                   <Users className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-lora font-semibold mb-3">Group Sessions</h3>
+                <h3 className="text-xl font-lora font-semibold mb-3">{t.groupSessions}</h3>
                 <p className="text-muted-foreground mb-4">
-                  Experience the power of shared healing and creative expression in a supportive group environment.
+                  {t.groupSessionsDesc}
                 </p>
                 <Button asChild variant="link" className="p-0 h-auto">
                   <Link to="/services">
-                    View Details <ArrowRight className="ml-2 h-4 w-4" />
+                    {t.viewDetails} <ArrowRight className={`${language === 'ar' ? 'mr-2 rotate-180' : 'ml-2'} h-4 w-4`} />
                   </Link>
                 </Button>
               </CardContent>
@@ -165,10 +169,10 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center text-white fade-in-up">
             <h2 className="text-4xl md:text-5xl font-lora font-bold mb-6">
-              Ready to Begin Your Journey?
+              {t.readyToBegin}
             </h2>
             <p className="text-xl mb-10 text-white/90 leading-relaxed">
-              Take the first step towards healing and growth through creative expression.
+              {t.readyToBeginDesc}
             </p>
             <Button
               asChild
@@ -177,7 +181,7 @@ const Home = () => {
               className="font-semibold text-lg px-10 py-7 shadow-xl hover:shadow-2xl hover:scale-105"
             >
               <Link to="/contact">
-                Schedule a Session <ArrowRight className="ml-2" size={22} />
+                {t.scheduleSession} <ArrowRight className={`${language === 'ar' ? 'mr-2 rotate-180' : 'ml-2'}`} size={22} />
               </Link>
             </Button>
           </div>

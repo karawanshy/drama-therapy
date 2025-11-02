@@ -2,17 +2,21 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/translations";
 
 const Navigation = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+  const { language } = useLanguage();
+  const t = translations[language].nav;
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "About Me", path: "/about" },
-    { name: "What is Drama Therapy?", path: "/drama-therapy" },
-    { name: "Services", path: "/services" },
-    { name: "Contact", path: "/contact" },
+    { name: t.home, path: "/" },
+    { name: t.about, path: "/about" },
+    { name: t.dramatherapy, path: "/drama-therapy" },
+    { name: t.services, path: "/services" },
+    { name: t.contact, path: "/contact" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -23,7 +27,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-2 transition-smooth hover:opacity-80">
             <h1 className="text-xl md:text-2xl font-lora font-bold text-primary">
-              Dr. Iman Kheil
+              {language === 'en' ? 'Dr. Iman Kheil' : 'د. ايمان كحيل'}
             </h1>
           </Link>
 
