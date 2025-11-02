@@ -76,7 +76,7 @@ export const translations = {
       paymentDesc: 'I offer flexible payment options for your convenience:',
       payment1: 'Zelle and Venmo accepted',
       payment2: 'Cash and checks accepted',
-      payment3: 'Insurance not accepted'
+      payment3: 'Insurance is not accepted'
     },
     contact: {
       title: 'Contact',
