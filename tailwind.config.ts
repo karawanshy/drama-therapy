@@ -66,6 +66,7 @@ export default {
       fontFamily: {
         'lora': ['Lora', 'serif'],
         'poppins': ['Poppins', 'sans-serif'],
+        'tajawal': ['Tajawal', 'sans-serif'],
       },
       keyframes: {
         "accordion-down": {

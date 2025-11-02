@@ -141,8 +141,16 @@ All colors MUST be HSL.
     @apply bg-background text-foreground font-['Poppins'] antialiased;
   }
   
+  [dir="rtl"] body {
+    @apply font-['Tajawal'];
+  }
+  
   h1, h2, h3, h4, h5, h6 {
     @apply font-['Lora'] font-semibold;
+  }
+  
+  [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4, [dir="rtl"] h5, [dir="rtl"] h6 {
+    @apply font-['Tajawal'] font-bold;
   }
 }
 
