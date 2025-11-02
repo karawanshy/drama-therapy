@@ -125,7 +125,7 @@ const Contact = () => {
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? t.sending : t.contactMe}
-                    <Send className={`${language === 'ar' ? 'mr-2 rotate-180' : 'ml-2'} h-4 w-4`} />
+                    <Send className={`${language === 'ar' ? 'mr-2 scale-x-[-1]' : 'ml-2'} h-4 w-4`} />
                   </Button>
                 </form>
               </Form>

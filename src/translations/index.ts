@@ -134,7 +134,7 @@ export const translations = {
       education: 'التعليم',
       educationDesc: 'دكتوراه في العلاج التعبيري\nجامعة Lesley',
       experience: 'الخبرة',
-      experienceDesc: 'العلاج الفردي والجماعي\nالأطفال والمراهقين والبالغين'
+      experienceDesc: 'العلاج الفردي، الجماعي\nالأطفال، المراهقين، والبالغين'
     },
     dramatherapy: {
       title: 'ما هو العلاج بالدراما؟',
@@ -168,7 +168,7 @@ export const translations = {
       paymentDesc: 'أقدم خيارات دفع مرنة لراحتك:',
       payment1: 'أقبل Zelle و Venmo',
       payment2: 'أقبل النقد والشيكات',
-      payment3: 'لا أقبل التأمين حالياً'
+      payment3: 'لا أقبل التأمين'
     },
     contact: {
       title: 'التواصل',
