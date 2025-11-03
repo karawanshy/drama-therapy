@@ -54,27 +54,11 @@ const DramaTherapy = () => {
               </p>
 
               <p className="text-lg leading-relaxed">
-                {language === 'en' ? (
-                  <>
-                    The goal is not to create a polished performance, but rather to encourage self-expression, healing, and personal growth. Drama therapy is not only for addressing psychological challenges — it is also a powerful tool for personal development.
-                  </>
-                ) : (
-                  <>
-                    الهدف ليس إنتاج عرض متقن، بل تشجيع التعبير الذاتي، والشفاء، والنمو الشخصي. العلاج بالدراما لا يُستخدم فقط لعلاج الاضطرابات النفسية، بل هو أيضاً أداة قوية للتطوير الذاتي.
-                  </>
-                )}
+                {t.intro3}
               </p>
 
               <p className="text-lg leading-relaxed">
-                {language === 'en' ? (
-                  <>
-                    Through role play, improvisation, and guided activities, clients can safely explore emotions, build coping strategies, and strengthen their sense of self.
-                  </>
-                ) : (
-                  <>
-                    من خلال لعب الأدوار والارتجال والأنشطة الموجهة، يمكن للعملاء استكشاف مشاعرهم بأمان، وبناء استراتيجيات للتأقلم، وتعزيز إحساسهم بالذات.
-                  </>
-                )}
+                {t.intro4}
               </p>
 
               <p className="text-lg leading-relaxed">
