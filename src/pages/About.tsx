@@ -26,11 +26,11 @@ const About = () => {
               <p className="text-foreground leading-relaxed mb-6">
                 {language === 'en' ? (
                   <>
-                    I am a drama therapist specializing in the use of expressive and creative arts to support emotional healing and personal growth. I hold a <strong>Ph.D. in Expressive Therapies</strong> from <strong>Lesley University</strong> in Cambridge, MA, a <strong>Master of Arts in Creative Arts Therapies</strong> with a concentration in <strong>Drama therapy</strong>, and a <strong>Bachelor of Arts in Psychology and Education</strong>.
+                    I am a drama therapist specializing in the use of expressive and creative arts to support emotional healing and personal growth. I hold a Ph.D. in Expressive Therapies from Lesley University in Cambridge, MA, a Master of Arts in Creative Arts Therapies with a concentration in Drama therapy, and a Bachelor of Arts in Psychology and Education.
                   </>
                 ) : (
                   <>
-                    أنا معالجة بالدراما متخصصة في استخدام الفنون التعبيرية والإبداعية لدعم الشفاء العاطفي والنمو الشخصي. أحمل <strong>دكتوراه في العلاج التعبيري</strong> من جامعة <strong>Lesley</strong> في كامبريدج، ماساتشوستس، ودرجة الماجستير في <strong>العلاج بالفنون الإبداعية</strong> بتخصص <strong>العلاج بالدراما</strong>، ودرجة البكالوريوس في <strong>علم النفس والتربية</strong>.
+                    أنا معالجة بالدراما متخصصة في استخدام الفنون التعبيرية والإبداعية لدعم الشفاء العاطفي والنمو الشخصي. أحمل دكتوراه في العلاج التعبيري من جامعة Lesley في كامبريدج، ماساتشوستس، ودرجة الماجستير في العلاج بالفنون الإبداعية بتخصص العلاج بالدراما، ودرجة البكالوريوس في علم النفس والتربية.
                   </>
                 )}
               </p>
@@ -38,11 +38,11 @@ const About = () => {
               <p className="text-foreground leading-relaxed mb-6">
                 {language === 'en' ? (
                   <>
-                    Over the years, I have worked extensively with children, youth, and adults in both individual and group settings. I currently provide therapy sessions at a community center in <strong>Malden, MA</strong>. My previous clinical work includes serving as a therapist with <strong>Trauma and Family Integration (TFI)</strong> in <strong>Lowell, MA</strong>, where I provided therapy for young clients facing behavioral and mental health challenges.
+                    Over the years, I have worked extensively with children, youth, and adults in both individual and group settings. I currently provide therapy sessions at a community center in Malden, MA. My previous clinical work includes serving as a therapist with Trauma and Family Integration (TFI) in Lowell, MA, where I provided therapy for young clients facing behavioral and mental health challenges.
                   </>
                 ) : (
                   <>
-                    على مدار السنوات، عملت بشكل موسّع مع الأطفال، والمراهقين، والبالغين في جلسات فردية وجماعية. أقدّم حالياً جلسات علاجية في مركز مجتمعي في <strong>مالدن، ماساتشوستس</strong>. أما خبرتي السابقة فتشمل عملي كمعالجة في <strong>مركز الدمج الأسري والصدمات (TFI)</strong> في <strong>لويل، ماساتشوستس</strong>، حيث قدمت علاجاً لعملاء شباب يواجهون تحديات سلوكية ونفسية.
+                    على مدار السنوات، عملت بشكل موسّع مع الأطفال، والمراهقين، والبالغين في جلسات فردية وجماعية. أقدّم حالياً جلسات علاجية في مركز مجتمعي في مالدن، ماساتشوستس. أما خبرتي السابقة فتشمل عملي كمعالجة في مركز الدمج الأسري والصدمات (TFI) في لويل، ماساتشوستس، حيث قدمت علاجاً لعملاء شباب يواجهون تحديات سلوكية ونفسية.
                   </>
                 )}
               </p>
@@ -50,11 +50,11 @@ const About = () => {
               <p className="text-foreground leading-relaxed mb-6">
                 {language === 'en' ? (
                   <>
-                    Prior to relocating to the United States, I organized and facilitated community-based therapy workshops, and conducted individual and group therapy sessions across <strong>Palestine</strong>. In <strong>2018</strong>, I also served as a Drama Therapy facilitator at the <strong>Creative Movement Therapy Association of India (CMTAI)</strong> conference.
+                    Prior to relocating to the United States, I organized and facilitated community-based therapy workshops, and conducted individual and group therapy sessions across Palestine. In 2018, I also served as a Drama Therapy facilitator at the Creative Movement Therapy Association of India (CMTAI) conference.
                   </>
                 ) : (
                   <>
-                    وقبل انتقالي إلى الولايات المتحدة، نظّمت وسهّلت ورش علاج مجتمعية، وأدرت جلسات علاج فردية وجماعية في <strong>فلسطين</strong>. وفي عام <strong>2018</strong>، شاركت كميسّرة للعلاج بالدراما في مؤتمر <strong>جمعية العلاج بالحركة الإبداعية في الهند (CMTAI)</strong>.
+                    وقبل انتقالي إلى الولايات المتحدة، نظّمت وسهّلت ورش علاج مجتمعية، وأدرت جلسات علاج فردية وجماعية في فلسطين. وفي عام 2018، شاركت كميسّرة للعلاج بالدراما في مؤتمر جمعية العلاج بالحركة الإبداعية في الهند (CMTAI).
                   </>
                 )}
               </p>

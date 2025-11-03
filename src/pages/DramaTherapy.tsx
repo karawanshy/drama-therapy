@@ -32,11 +32,11 @@ const DramaTherapy = () => {
               <p className="text-lg leading-relaxed">
                 {language === 'en' ? (
                   <>
-                    When words alone are not enough, <strong>creativity</strong> opens new pathways for processing feelings and experiences in ways that support healing and growth.
+                    When words alone are not enough, creativity opens new pathways for processing feelings and experiences in ways that support healing and growth.
                   </>
                 ) : (
                   <>
-                    عندما لا تكفي الكلمات وحدها، يفتح <strong>الإبداع</strong> أبواباً جديدة لمعالجة المشاعر والتجارب بطرق تدعم الشفاء والنمو.
+                    عندما لا تكفي الكلمات وحدها، يفتح الإبداع أبواباً جديدة لمعالجة المشاعر والتجارب بطرق تدعم الشفاء والنمو.
                   </>
                 )}
               </p>
@@ -44,11 +44,11 @@ const DramaTherapy = () => {
               <p className="text-lg leading-relaxed">
                 {language === 'en' ? (
                   <>
-                    Drama therapy is a <strong>creative form of psychotherapy</strong> that uses theater techniques—such as <strong>role play, storytelling, improvisation, movement, and performance</strong>—as therapeutic tools. It is an <strong>active, experiential process</strong>. Instead of only talking about experiences in a traditional therapy setting, clients can explore feelings, relationships, and challenges through dramatic expression.
+                    Drama therapy is a creative form of psychotherapy that uses theater techniques—such as role play, storytelling, improvisation, movement, and performance—as therapeutic tools. It is an active, experiential process. Instead of only talking about experiences in a traditional therapy setting, clients can explore feelings, relationships, and challenges through dramatic expression.
                   </>
                 ) : (
                   <>
-                    العلاج بالدراما هو <strong>شكل إبداعي من العلاج النفسي</strong> يستخدم تقنيات المسرح — مثل <strong>لعب الأدوار، وسرد القصص، والارتجال، والحركة، والأداء</strong> — كأدوات علاجية. وهو عملية <strong>نشِطة وتجريبية</strong>، حيث لا يقتصر الأمر على الحديث عن التجارب كما في العلاج التقليدي، بل يتم استكشاف المشاعر والعلاقات والتحديات من خلال التعبير الدرامي.
+                    العلاج بالدراما هو شكل إبداعي من العلاج النفسي يستخدم تقنيات المسرح — مثل لعب الأدوار، وسرد القصص، والارتجال، والحركة، والأداء — كأدوات علاجية. وهو عملية نشِطة وتجريبية، حيث لا يقتصر الأمر على الحديث عن التجارب كما في العلاج التقليدي، بل يتم استكشاف المشاعر والعلاقات والتحديات من خلال التعبير الدرامي.
                   </>
                 )}
               </p>
@@ -56,11 +56,11 @@ const DramaTherapy = () => {
               <p className="text-lg leading-relaxed">
                 {language === 'en' ? (
                   <>
-                    The goal is not to create a polished performance, but rather to <strong>encourage self-expression, healing, and personal growth</strong>. Drama therapy is not only for addressing psychological challenges — it is also a powerful tool for personal development.
+                    The goal is not to create a polished performance, but rather to encourage self-expression, healing, and personal growth. Drama therapy is not only for addressing psychological challenges — it is also a powerful tool for personal development.
                   </>
                 ) : (
                   <>
-                    الهدف ليس إنتاج عرض متقن، بل <strong>تشجيع التعبير الذاتي، والشفاء، والنمو الشخصي</strong>. العلاج بالدراما لا يُستخدم فقط لعلاج الاضطرابات النفسية، بل هو أيضاً أداة قوية للتطوير الذاتي.
+                    الهدف ليس إنتاج عرض متقن، بل تشجيع التعبير الذاتي، والشفاء، والنمو الشخصي. العلاج بالدراما لا يُستخدم فقط لعلاج الاضطرابات النفسية، بل هو أيضاً أداة قوية للتطوير الذاتي.
                   </>
                 )}
               </p>
@@ -68,11 +68,11 @@ const DramaTherapy = () => {
               <p className="text-lg leading-relaxed">
                 {language === 'en' ? (
                   <>
-                    Through <strong>role play, improvisation, and guided activities</strong>, clients can safely explore emotions, build coping strategies, and strengthen their sense of self.
+                    Through role play, improvisation, and guided activities, clients can safely explore emotions, build coping strategies, and strengthen their sense of self.
                   </>
                 ) : (
                   <>
-                    من خلال <strong>لعب الأدوار والارتجال والأنشطة الموجهة</strong>، يمكن للعملاء استكشاف مشاعرهم بأمان، وبناء استراتيجيات للتأقلم، وتعزيز إحساسهم بالذات.
+                    من خلال لعب الأدوار والارتجال والأنشطة الموجهة، يمكن للعملاء استكشاف مشاعرهم بأمان، وبناء استراتيجيات للتأقلم، وتعزيز إحساسهم بالذات.
                   </>
                 )}
               </p>
@@ -80,11 +80,11 @@ const DramaTherapy = () => {
               <p className="text-lg leading-relaxed">
                 {language === 'en' ? (
                   <>
-                    By entering a fictional world, individuals are able to view problems and conflicts from <strong>different perspectives</strong>, creating a unique mirror for self-exploration and reflection that can be both therapeutic and transformative.
+                    By entering a fictional world, individuals are able to view problems and conflicts from different perspectives, creating a unique mirror for self-exploration and reflection that can be both therapeutic and transformative.
                   </>
                 ) : (
                   <>
-                    ومن خلال الدخول في عالم تخيّلي، يمكنهم النظر إلى مشكلاتهم وصراعاتهم من <strong>زوايا جديدة</strong>، مما يخلق مرآة فريدة لاكتشاف الذات والتأمل، تكون علاجية وتحويلية في آنٍ واحد.
+                    ومن خلال الدخول في عالم تخيّلي، يمكنهم النظر إلى مشكلاتهم وصراعاتهم من زوايا جديدة، مما يخلق مرآة فريدة لاكتشاف الذات والتأمل، تكون علاجية وتحويلية في آنٍ واحد.
                   </>
                 )}
               </p>
