@@ -33,7 +33,7 @@ const Contact = () => {
 
   useEffect(() => {
     emailjs.init({
-      publicKey: "Y i52cqrC9ZDztBBKYv",
+      publicKey: "i52cqrC9ZDztBBKYv",
     });
   }, []);
 
