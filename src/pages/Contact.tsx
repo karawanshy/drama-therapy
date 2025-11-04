@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import emailjs from '@emailjs/browser';
 import Navigation from "@/components/Navigation";
 import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
@@ -39,22 +40,40 @@ const Contact = () => {
     },
   });
 
-  const onSubmit = (data: ContactFormValues) => {
+  const onSubmit = async (data: ContactFormValues) => {
     setIsSubmitting(true);
     
-    const subject = encodeURIComponent(`Contact from ${data.name}`);
-    const body = encodeURIComponent(`Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`);
-    const mailtoLink = `mailto:aabb36877@gmail.com?subject=${subject}&body=${body}`;
-    
-    window.location.href = mailtoLink;
-    
-    toast({
-      title: language === 'en' ? "Opening email client..." : "فتح برنامج البريد الإلكتروني...",
-      description: language === 'en' ? "Your email client will open with the message." : "سيتم فتح برنامج البريد الإلكتروني مع الرسالة.",
-    });
-    
-    form.reset();
-    setIsSubmitting(false);
+    try {
+      // EmailJS configuration - Replace these with your actual EmailJS credentials
+      const SERVICE_ID = 'YOUR_SERVICE_ID';
+      const TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
+      const PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+      
+      const templateParams = {
+        from_name: data.name,
+        from_email: data.email,
+        message: data.message,
+        to_email: 'aabb36877@gmail.com',
+      };
+      
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
+      
+      toast({
+        title: language === 'en' ? "Message sent!" : "تم إرسال الرسالة!",
+        description: language === 'en' ? "Thank you for reaching out. I'll get back to you soon." : "شكراً لتواصلك. سأرد عليك قريباً.",
+      });
+      
+      form.reset();
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      toast({
+        title: language === 'en' ? "Error" : "خطأ",
+        description: language === 'en' ? "Failed to send message. Please try again." : "فشل إرسال الرسالة. يرجى المحاولة مرة أخرى.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
