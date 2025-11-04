@@ -25,9 +25,9 @@ import contactImage from "@/assets/contact-curtains.jpg";
 
 // EmailJS Configuration
 const EMAILJS_CONFIG = {
-  PUBLIC_KEY: "i52cqrC9ZDztBBKYv",
-  SERVICE_ID: "service_c1evbs8",
-  TEMPLATE_ID: "template_kojxt1f",
+  PUBLIC_KEY: "v9Hs_AczBe-9bn21G",
+  SERVICE_ID: "service_drama_therapy",
+  TEMPLATE_ID: "template_n7oi463",
   RECIPIENT_EMAIL: "aabb36877@gmail.com",
 } as const;
 
