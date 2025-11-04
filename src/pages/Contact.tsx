@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -31,6 +31,12 @@ const Contact = () => {
   const { language } = useLanguage();
   const t = translations[language].contact;
 
+  useEffect(() => {
+    emailjs.init({
+      publicKey: "Y i52cqrC9ZDztBBKYv",
+    });
+  }, []);
+
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
@@ -44,11 +50,6 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      // EmailJS configuration - Replace these with your actual EmailJS credentials
-      const SERVICE_ID = 'YOUR_SERVICE_ID';
-      const TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-      const PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
-      
       const templateParams = {
         from_name: data.name,
         from_email: data.email,
@@ -56,7 +57,7 @@ const Contact = () => {
         to_email: 'aabb36877@gmail.com',
       };
       
-      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
+      await emailjs.send("service_c1evbs8", "template_kojxt1f", templateParams);
       
       toast({
         title: language === 'en' ? "Message sent!" : "تم إرسال الرسالة!",
