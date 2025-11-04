@@ -1,7 +1,15 @@
+// Icons
 import { Globe } from "lucide-react";
+
+// Context
 import { useLanguage } from "@/contexts/LanguageContext";
 
+/**
+ * Footer Component
+ * Displays contact information and language switcher
+ */
 const Footer = () => {
+  // Hooks
   const { language, setLanguage } = useLanguage();
 
   return (

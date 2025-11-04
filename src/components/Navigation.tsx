@@ -1,16 +1,33 @@
-import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+// React
 import { useState } from "react";
+
+// React Router
+import { Link, useLocation } from "react-router-dom";
+
+// Icons
+import { Menu, X } from "lucide-react";
+
+// UI Components
 import { Button } from "@/components/ui/button";
+
+// Context & Translations
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
 
+/**
+ * Navigation Component
+ * Responsive navigation with mobile menu and language support
+ */
 const Navigation = () => {
+  // Hooks
   const location = useLocation();
-  const [isOpen, setIsOpen] = useState(false);
   const { language } = useLanguage();
+  const [isOpen, setIsOpen] = useState(false);
+  
+  // Translations
   const t = translations[language].nav;
 
+  // Navigation Links Configuration
   const navLinks = [
     { name: t.home, path: "/" },
     { name: t.about, path: "/about" },
@@ -19,6 +36,9 @@ const Navigation = () => {
     { name: t.contact, path: "/contact" },
   ];
 
+  /**
+   * Check if current route matches given path
+   */
   const isActive = (path: string) => location.pathname === path;
 
   return (

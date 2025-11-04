@@ -1,12 +1,24 @@
+// UI Components
+import { Card, CardContent } from "@/components/ui/card";
+
+// Layout Components
 import Navigation from "@/components/Navigation";
 import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
-import { Card, CardContent } from "@/components/ui/card";
+
+// Context & Translations
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
+
+// Assets
 import heroImage from "@/assets/about-therapy-new.jpg";
 
+/**
+ * About Page Component
+ * Professional background, education, and experience
+ */
 const About = () => {
+  // Hooks & Translations
   const { language } = useLanguage();
   const t = translations[language].about;
 

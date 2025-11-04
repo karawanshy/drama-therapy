@@ -1,13 +1,27 @@
+// Icons
+import { Theater, Heart, Users, Sparkles } from "lucide-react";
+
+// UI Components
+import { Card, CardContent } from "@/components/ui/card";
+
+// Layout Components
 import Navigation from "@/components/Navigation";
 import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
-import { Card, CardContent } from "@/components/ui/card";
-import { Theater, Heart, Users, Sparkles } from "lucide-react";
+
+// Context & Translations
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
+
+// Assets
 import conceptImage from "@/assets/drama-therapy-concept.jpg";
 
+/**
+ * Drama Therapy Page Component
+ * Explains drama therapy approach and benefits
+ */
 const DramaTherapy = () => {
+  // Hooks & Translations
   const { language } = useLanguage();
   const t = translations[language].dramatherapy;
 

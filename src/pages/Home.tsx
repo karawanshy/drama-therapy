@@ -1,14 +1,30 @@
+// React Router
 import { Link } from "react-router-dom";
+
+// Icons
+import { ArrowRight, Heart, Users, Sparkles, User } from "lucide-react";
+
+// UI Components
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Heart, Users, Sparkles, User } from "lucide-react";
+
+// Layout Components
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+
+// Context & Translations
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
+
+// Assets
 import heroImage from "@/assets/hero-drama-therapy.jpg";
 
+/**
+ * Home Page Component
+ * Landing page with hero section, features, philosophy, services, and CTA
+ */
 const Home = () => {
+  // Hooks & Translations
   const { language } = useLanguage();
   const t = translations[language].home;
 

@@ -1,13 +1,27 @@
+// Icons
+import { User, Users } from "lucide-react";
+
+// UI Components
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
+// Layout Components
 import Navigation from "@/components/Navigation";
 import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { User, Users } from "lucide-react";
+
+// Context & Translations
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
+
+// Assets
 import servicesImage from "@/assets/services-header.jpg";
 
+/**
+ * Services Page Component
+ * Displays individual and group therapy sessions with pricing
+ */
 const Services = () => {
+  // Hooks & Translations
   const { language } = useLanguage();
   const t = translations[language].services;
 
