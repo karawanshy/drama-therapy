@@ -1,73 +1,68 @@
-# Welcome to your Lovable project
+# Drama Therapy with Dr. Iman Kheil
 
-## Project info
+A warm, creative, and professional website built for **Dr. Iman Kheil**, a **Drama Therapist** specializing in the use of expressive and creative arts to support emotional healing and personal growth.
 
-**URL**: https://lovable.dev/projects/f4ec9c02-2547-4c1f-9d7c-8b98c49c0679
+This website provides visitors with information about drama therapy, Dr. Iman’s background and philosophy, offered services, and contact details — presented through a calm, elegant design with soft transitions and responsive visuals.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Website Pages
 
-**Use Lovable**
+### 1. About Me
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f4ec9c02-2547-4c1f-9d7c-8b98c49c0679) and start prompting.
+Introduces Dr. Iman Kheil — her academic background, clinical experience, and therapeutic philosophy emphasizing creativity and human connection through expressive arts.
 
-Changes made via Lovable will be committed automatically to this repo.
+### 2. What is Drama Therapy?
 
-**Use your preferred IDE**
+Explains the concept and benefits of drama therapy, highlighting its role as a creative form of psychotherapy using storytelling, role play, movement, and performance for healing and growth.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 3. Services
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Details individual and group therapy options, session durations, pricing, and accepted payment methods.
 
-Follow these steps:
+### 4. Contact
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Provides contact information and a simple form for reaching out to schedule a session or request more details.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Design & Features
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+* Elegant, modern layout with smooth transitions
+* Calming color palette (soft blues, creams, and warm neutrals)
+* Responsive design for mobile and desktop
+* Minimal, readable typography
+* Professional and artistic imagery related to creative expression and healing
+* Clean navigation and footer
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
 ## What technologies are used for this project?
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+* **Vite** – for fast and modern front-end build tooling
+* **TypeScript** – for type safety and maintainable code
+* **React** – for building a dynamic and component-based user interface
+* **shadcn-ui** – for accessible and elegant UI components
+* **Tailwind CSS** – for utility-first and responsive styling
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/f4ec9c02-2547-4c1f-9d7c-8b98c49c0679) and click on Share -> Publish.
+##  Deployment
 
-## Can I connect a custom domain to my Lovable project?
+You can deploy this project easily on:
 
-Yes, you can!
+* **Vercel**
+* **Netlify**
+* **GitHub Pages**
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Or export from **Lovable** if using the AI builder version.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+##  License
+
+This project is created for personal and professional presentation purposes.
+All text and content © 2025 **Dr. Iman Kheil**.
+Design and development assistance by **Tasneem**.
