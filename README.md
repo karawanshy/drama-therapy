@@ -1,4 +1,4 @@
-# Drama Therapy with Dr. Iman Kheil
+# Drama Therapy
 
 A warm, creative, and professional website built for **Dr. Iman Kheil**, a **Drama Therapist** specializing in the use of expressive and creative arts to support emotional healing and personal growth.
 
