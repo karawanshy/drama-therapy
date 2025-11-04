@@ -26,8 +26,8 @@ const Footer = () => {
             <h3 className="font-lora font-bold text-lg mb-2 text-primary">
               {language === 'en' ? 'Contact' : 'التواصل'}
             </h3>
-            <p className="text-sm text-muted-foreground">[Add number]</p>
-            <p className="text-sm text-muted-foreground">[Email coming soon]</p>
+            <p className="text-sm text-muted-foreground">+1 617 545 5218</p>
+            <p className="text-sm text-muted-foreground">Dr.imankheil[at]gmail[dot]com</p>
           </div>
           <div>
             <h3 className="font-lora font-bold text-lg mb-2 text-primary flex items-center gap-2">
