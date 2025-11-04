@@ -34,16 +34,14 @@ const Home = () => {
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: `url(${heroImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/80 to-background/95" />
-        </div>
+        <img 
+          src={heroImage} 
+          alt="" 
+          loading="eager"
+          fetchPriority="high"
+          className="absolute inset-0 z-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-background/95 via-background/80 to-background/95" />
         
         <div className="container mx-auto px-4 z-10">
           <div className="max-w-4xl mx-auto text-center">

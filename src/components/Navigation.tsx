@@ -14,6 +14,9 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
 
+// Utils
+import { preloadRouteImages } from "@/utils/imagePreloader";
+
 /**
  * Navigation Component
  * Responsive navigation with mobile menu and language support
@@ -41,6 +44,13 @@ const Navigation = () => {
    */
   const isActive = (path: string) => location.pathname === path;
 
+  /**
+   * Preload images when hovering over navigation links
+   */
+  const handleLinkHover = (path: string) => {
+    preloadRouteImages(path);
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border shadow-soft">
       <div className="container mx-auto px-4">
@@ -57,6 +67,7 @@ const Navigation = () => {
               <Link
                 key={link.path}
                 to={link.path}
+                onMouseEnter={() => handleLinkHover(link.path)}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-smooth ${
                   isActive(link.path)
                     ? "bg-primary text-primary-foreground"
@@ -88,6 +99,7 @@ const Navigation = () => {
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsOpen(false)}
+                  onTouchStart={() => handleLinkHover(link.path)}
                   className={`px-4 py-3 rounded-lg text-sm font-medium transition-smooth ${
                     isActive(link.path)
                       ? "bg-primary text-primary-foreground"
