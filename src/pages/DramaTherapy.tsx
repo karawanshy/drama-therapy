@@ -59,16 +59,16 @@ const DramaTherapy = () => {
             </p>
           </div>
 
-          {/* First Section - Image Left, Text Right */}
-          <div className={`flex flex-col ${language === 'ar' ? 'md:flex-row-reverse' : 'md:flex-row'} gap-8 md:gap-12 items-center`}>
-            <div className="w-full md:w-1/2">
+          {/* First Section - Text Left, Image Right */}
+          <div className={`flex flex-col ${language === 'ar' ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-12 items-center`}>
+            <div className="w-full md:w-2/5">
               <img 
                 src={masksImage} 
                 alt="Drama therapy masks representing different emotions" 
-                className="rounded-2xl shadow-large w-full h-auto object-cover"
+                className="rounded-2xl shadow-large w-full h-auto object-cover max-h-[300px]"
               />
             </div>
-            <div className="w-full md:w-1/2 space-y-6">
+            <div className="w-full md:w-3/5 space-y-6">
               <p className="text-lg leading-relaxed">
                 {language === 'en' ? (
                   <>
@@ -94,16 +94,16 @@ const DramaTherapy = () => {
             </div>
           </div>
 
-          {/* Second Section - Text Left, Image Right */}
-          <div className={`flex flex-col ${language === 'ar' ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-12 items-center`}>
-            <div className="w-full md:w-1/2">
+          {/* Second Section - Image Left, Text Right */}
+          <div className={`flex flex-col ${language === 'ar' ? 'md:flex-row-reverse' : 'md:flex-row'} gap-8 md:gap-12 items-center`}>
+            <div className="w-full md:w-2/5">
               <img 
                 src={imaginationImage} 
                 alt="Child using imagination in drama therapy" 
-                className="rounded-2xl shadow-large w-full h-auto object-cover"
+                className="rounded-2xl shadow-large w-full h-auto object-cover max-h-[300px]"
               />
             </div>
-            <div className="w-full md:w-1/2 space-y-6">
+            <div className="w-full md:w-3/5 space-y-6">
               <p className="text-lg leading-relaxed">
                 {language === 'en' ? (
                   <>
