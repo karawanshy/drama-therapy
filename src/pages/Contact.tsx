@@ -7,7 +7,7 @@ import { Send } from "lucide-react";
 
 // Components
 import Navigation from "@/components/Navigation";
-import PageHeader from "@/components/PageHeader";
+
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -115,87 +115,105 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen">
-      <Navigation />
-      <PageHeader
-        title={t.title}
-        imageSrc={contactImage}
+    <div className="min-h-screen relative">
+      {/* Full page background image */}
+      <img 
+        src={contactImage} 
+        alt="" 
+        loading="eager"
+        fetchPriority="high"
+        className="fixed inset-0 z-0 w-full h-full object-cover"
       />
+      <div className="fixed inset-0 z-0 bg-gradient-to-b from-background/90 via-background/85 to-background/95" />
       
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div className="max-w-5xl mx-auto">
+      <div className="relative z-10">
+        <Navigation />
+        
+        {/* Title Section */}
+        <header className="min-h-[40vh] flex items-center justify-center pt-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-lora font-bold mb-6 animate-fade-in-up text-primary">
+                {t.title}
+              </h1>
+            </div>
+          </div>
+        </header>
+        
+        {/* Form Section */}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
+          <div className="max-w-5xl mx-auto">
+            <Card className="shadow-large animate-gentle-scale max-w-2xl mx-auto bg-card/95 backdrop-blur-sm">
+              <CardHeader>
+                <CardTitle className="text-2xl font-lora">{t.sendMessage}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <Form {...form}>
+                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                    <FormField
+                      control={form.control}
+                      name="name"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>{t.name}</FormLabel>
+                          <FormControl>
+                            <Input placeholder={t.namePlaceholder} {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
 
-          <Card className="shadow-large animate-gentle-scale max-w-2xl mx-auto">
-            <CardHeader>
-              <CardTitle className="text-2xl font-lora">{t.sendMessage}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                  <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>{t.name}</FormLabel>
-                        <FormControl>
-                          <Input placeholder={t.namePlaceholder} {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                    <FormField
+                      control={form.control}
+                      name="email"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>{t.email}</FormLabel>
+                          <FormControl>
+                            <Input type="email" placeholder={t.emailPlaceholder} {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
 
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>{t.email}</FormLabel>
-                        <FormControl>
-                          <Input type="email" placeholder={t.emailPlaceholder} {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                    <FormField
+                      control={form.control}
+                      name="message"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>{t.message}</FormLabel>
+                          <FormControl>
+                            <Textarea 
+                              placeholder={t.messagePlaceholder}
+                              className="min-h-[150px] resize-none"
+                              {...field}
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
 
-                  <FormField
-                    control={form.control}
-                    name="message"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>{t.message}</FormLabel>
-                        <FormControl>
-                          <Textarea 
-                            placeholder={t.messagePlaceholder}
-                            className="min-h-[150px] resize-none"
-                            {...field}
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-
-                  <Button 
-                    type="submit" 
-                    className="w-full transition-smooth hover:scale-105" 
-                    size="lg"
-                    disabled={isSubmitting}
-                  >
-                    {isSubmitting ? t.sending : t.contactMe}
-                    <Send className={`${language === 'ar' ? 'mr-2 scale-x-[-1]' : 'ml-2'} h-4 w-4`} />
-                  </Button>
-                </form>
-              </Form>
-            </CardContent>
-          </Card>
-
+                    <Button 
+                      type="submit" 
+                      className="w-full transition-smooth hover:scale-105" 
+                      size="lg"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? t.sending : t.contactMe}
+                      <Send className={`${language === 'ar' ? 'mr-2 scale-x-[-1]' : 'ml-2'} h-4 w-4`} />
+                    </Button>
+                  </form>
+                </Form>
+              </CardContent>
+            </Card>
+          </div>
         </div>
-      </div>
 
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 };
