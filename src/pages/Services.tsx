@@ -14,7 +14,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
 
 // Assets
-import servicesImage from "@/assets/services-header.jpg";
+import servicesImage from "@/assets/drama-therapy-concept.jpg";
 
 /**
  * Services Page Component
