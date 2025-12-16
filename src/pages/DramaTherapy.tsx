@@ -14,7 +14,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
 
 // Assets
-import conceptImage from "@/assets/drama-therapy-concept.jpg";
+import conceptImage from "@/assets/drama-therapy-group.jpg";
 
 /**
  * Drama Therapy Page Component
