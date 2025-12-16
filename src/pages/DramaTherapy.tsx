@@ -14,6 +14,8 @@ import { translations } from "@/translations";
 
 // Assets
 import conceptImage from "@/assets/drama-therapy-group.jpg";
+import masksImage from "@/assets/drama-masks.jpg";
+import imaginationImage from "@/assets/imagination-child.jpg";
 
 /**
  * Drama Therapy Page Component
@@ -37,11 +39,11 @@ const DramaTherapy = () => {
           fetchPriority="high"
           className="absolute inset-0 z-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 z-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent" />
+        <div className="absolute inset-0 z-0 bg-gradient-to-r from-background/90 via-background/50 to-transparent" />
         
         <div className="container mx-auto px-4 z-10">
           <div className={`max-w-2xl ${language === 'ar' ? 'mr-0 ml-auto text-right' : 'ml-0 mr-auto text-left'}`}>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-lora font-bold mb-6 animate-fade-in-up text-primary">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-lora font-bold mb-6 animate-fade-in-up text-primary drop-shadow-lg [text-shadow:_2px_2px_8px_rgb(0_0_0_/_20%)]">
               {t.title}
             </h1>
           </div>
@@ -49,15 +51,24 @@ const DramaTherapy = () => {
       </header>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div className="max-w-4xl mx-auto space-y-8 fade-in-up">
-          <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-8 md:p-12 rounded-2xl shadow-lg">
+        <div className="max-w-6xl mx-auto space-y-16">
+          {/* Quote Section */}
+          <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-8 md:p-12 rounded-2xl shadow-lg max-w-4xl mx-auto">
             <p className="text-xl md:text-2xl font-lora text-primary text-center italic leading-relaxed">
               {t.quote}
             </p>
           </div>
 
-          <div className="bg-card p-8 md:p-12 rounded-2xl shadow-lg">
-            <div className="prose prose-lg max-w-none space-y-6">
+          {/* First Section - Image Left, Text Right */}
+          <div className={`flex flex-col ${language === 'ar' ? 'md:flex-row-reverse' : 'md:flex-row'} gap-8 md:gap-12 items-center`}>
+            <div className="w-full md:w-1/2">
+              <img 
+                src={masksImage} 
+                alt="Drama therapy masks representing different emotions" 
+                className="rounded-2xl shadow-large w-full h-auto object-cover"
+              />
+            </div>
+            <div className="w-full md:w-1/2 space-y-6">
               <p className="text-lg leading-relaxed">
                 {language === 'en' ? (
                   <>
@@ -69,27 +80,41 @@ const DramaTherapy = () => {
                   </>
                 )}
               </p>
-
               <p className="text-lg leading-relaxed">
                 {language === 'en' ? (
                   <>
-                    Drama therapy is a creative form of psychotherapy that uses theater techniques—such as role play, storytelling, improvisation, movement, and performance—as therapeutic tools. It is an active, experiential process. Instead of only talking about experiences in a traditional therapy setting, clients can explore feelings, relationships, and challenges through dramatic expression.
+                    Drama therapy is a creative form of psychotherapy that uses theater techniques—such as role play, storytelling, improvisation, movement, and performance—as therapeutic tools. It is an active, experiential process.
                   </>
                 ) : (
                   <>
-                    العلاج بالدراما هو شكل إبداعي من العلاج النفسي يستخدم تقنيات المسرح — مثل لعب الأدوار، وسرد القصص، والارتجال، والحركة، والأداء — كأدوات علاجية. وهو عملية نشِطة وتجريبية، حيث لا يقتصر الأمر على الحديث عن التجارب كما في العلاج التقليدي، بل يتم استكشاف المشاعر والعلاقات والتحديات من خلال التعبير الدرامي.
+                    العلاج بالدراما هو شكل إبداعي من العلاج النفسي يستخدم تقنيات المسرح — مثل لعب الأدوار، وسرد القصص، والارتجال، والحركة، والأداء — كأدوات علاجية. وهو عملية نشِطة وتجريبية.
                   </>
                 )}
               </p>
+            </div>
+          </div>
 
+          {/* Second Section - Text Left, Image Right */}
+          <div className={`flex flex-col ${language === 'ar' ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-12 items-center`}>
+            <div className="w-full md:w-1/2">
+              <img 
+                src={imaginationImage} 
+                alt="Child using imagination in drama therapy" 
+                className="rounded-2xl shadow-large w-full h-auto object-cover"
+              />
+            </div>
+            <div className="w-full md:w-1/2 space-y-6">
               <p className="text-lg leading-relaxed">
-                {t.intro3}
+                {language === 'en' ? (
+                  <>
+                    Instead of only talking about experiences in a traditional therapy setting, clients can explore feelings, relationships, and challenges through dramatic expression.
+                  </>
+                ) : (
+                  <>
+                    حيث لا يقتصر الأمر على الحديث عن التجارب كما في العلاج التقليدي، بل يتم استكشاف المشاعر والعلاقات والتحديات من خلال التعبير الدرامي.
+                  </>
+                )}
               </p>
-
-              <p className="text-lg leading-relaxed">
-                {t.intro4}
-              </p>
-
               <p className="text-lg leading-relaxed">
                 {language === 'en' ? (
                   <>
