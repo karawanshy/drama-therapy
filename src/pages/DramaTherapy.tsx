@@ -6,7 +6,6 @@ import { Card, CardContent } from "@/components/ui/card";
 
 // Layout Components
 import Navigation from "@/components/Navigation";
-import PageHeader from "@/components/PageHeader";
 import Footer from "@/components/Footer";
 
 // Context & Translations
@@ -28,10 +27,26 @@ const DramaTherapy = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <PageHeader
-        title={t.title}
-        imageSrc={conceptImage}
-      />
+      
+      {/* Custom Header with left-aligned title and lighter overlay */}
+      <header className="relative min-h-[60vh] flex items-center overflow-hidden pt-20">
+        <img 
+          src={conceptImage} 
+          alt="" 
+          loading="eager"
+          fetchPriority="high"
+          className="absolute inset-0 z-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 z-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent" />
+        
+        <div className="container mx-auto px-4 z-10">
+          <div className={`max-w-2xl ${language === 'ar' ? 'mr-0 ml-auto text-right' : 'ml-0 mr-auto text-left'}`}>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-lora font-bold mb-6 animate-fade-in-up text-primary">
+              {t.title}
+            </h1>
+          </div>
+        </div>
+      </header>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="max-w-4xl mx-auto space-y-8 fade-in-up">
