@@ -43,7 +43,7 @@ const DramaTherapy = () => {
         
         <div className="container mx-auto px-4 z-10">
           <div className="max-w-2xl ml-0 mr-auto text-left">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-lora font-bold mb-6 animate-fade-in-up text-primary drop-shadow-2xl [text-shadow:_3px_3px_12px_rgb(0_0_0_/_40%),_0_0_30px_rgb(255_255_255_/_50%)]">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-lora font-bold mb-6 animate-fade-in-up text-white">
               {t.title}
             </h1>
           </div>
