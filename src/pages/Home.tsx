@@ -33,7 +33,7 @@ const Home = () => {
       <Navigation />
       
       {/* Hero Section - Split Layout */}
-      <section className="relative min-h-screen flex items-center overflow-hidden pt-20 bg-secondary/20">
+      <section className="relative min-h-screen overflow-hidden pt-20 items-end justify-start flex flex-row bg-muted">
         <div className="container mx-auto px-4 z-10">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             {/* Image on Left */}
