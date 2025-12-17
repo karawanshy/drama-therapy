@@ -30,16 +30,16 @@ const DramaTherapy = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      {/* Custom Header with left-aligned title and lighter overlay */}
+      {/* Custom Header with left-aligned title and full lighter overlay */}
       <header className="relative min-h-[60vh] flex items-center overflow-hidden pt-20">
         <img 
           src={conceptImage} 
           alt="" 
           loading="eager"
           fetchPriority="high"
-          className="absolute inset-0 z-0 w-full h-full object-cover"
+          className="absolute inset-0 z-0 w-full h-full object-cover object-top"
         />
-        <div className="absolute inset-0 z-0 bg-gradient-to-r from-background/90 via-background/50 to-transparent" />
+        <div className="absolute inset-0 z-0 bg-background/40" />
         
         <div className="container mx-auto px-4 z-10">
           <div className="max-w-2xl ml-0 mr-auto text-left">
