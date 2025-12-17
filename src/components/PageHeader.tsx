@@ -17,7 +17,7 @@ const PageHeader = ({ title, subtitle, imageSrc }: PageHeaderProps) => {
         alt="" 
         loading="eager"
         fetchPriority="high"
-        className="absolute inset-0 z-0 w-full h-full object-cover"
+        className="absolute inset-0 z-0 w-full h-full object-cover object-top"
       />
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-background/95 via-background/80 to-background/95" />
       
