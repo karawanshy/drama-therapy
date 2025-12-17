@@ -62,10 +62,10 @@ const Navigation = () => {
     preloadRouteImages(path);
   };
   return <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border shadow-soft">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 bg-primary-foreground">
         <div className="flex items-center justify-between h-20 bg-primary-foreground">
           <Link to="/" className="flex items-center space-x-2 transition-smooth hover:opacity-80">
-            <h1 className="text-xl md:text-2xl font-lora font-bold text-primary">
+            <h1 className="text-xl md:text-2xl font-lora font-bold text-primary bg-primary-foreground">
               {language === 'en' ? 'Dr. Iman Kheil' : 'د. ايمان كحيل'}
             </h1>
           </Link>
