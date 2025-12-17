@@ -11,7 +11,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
 
 // Assets
-import heroImage from "@/assets/about-therapy-new.jpg";
+import heroImage from "@/assets/hero-drama-therapy.jpg";
 
 /**
  * About Page Component
