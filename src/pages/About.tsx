@@ -1,6 +1,3 @@
-// UI Components
-import { Card, CardContent } from "@/components/ui/card";
-
 // Layout Components
 import Navigation from "@/components/Navigation";
 import PageHeader from "@/components/PageHeader";
@@ -91,24 +88,20 @@ const About = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 mt-8">
-            <Card className="shadow-medium">
-              <CardContent className="p-6 text-center">
-                <h3 className="font-lora text-xl font-semibold mb-2 text-primary">{t.education}</h3>
-                <p className="text-sm text-muted-foreground whitespace-pre-line">
-                  {t.educationDesc}
-                </p>
-              </CardContent>
-            </Card>
+          <div className="grid md:grid-cols-2 gap-8 mt-8">
+            <div className="text-center">
+              <h3 className="font-lora text-xl font-semibold mb-2 text-primary">{t.education}</h3>
+              <p className="text-sm text-muted-foreground whitespace-pre-line">
+                {t.educationDesc}
+              </p>
+            </div>
 
-            <Card className="shadow-medium">
-              <CardContent className="p-6 text-center">
-                <h3 className="font-lora text-xl font-semibold mb-2 text-primary">{t.experience}</h3>
-                <p className="text-sm text-muted-foreground whitespace-pre-line">
-                  {t.experienceDesc}
-                </p>
-              </CardContent>
-            </Card>
+            <div className="text-center">
+              <h3 className="font-lora text-xl font-semibold mb-2 text-primary">{t.experience}</h3>
+              <p className="text-sm text-muted-foreground whitespace-pre-line">
+                {t.experienceDesc}
+              </p>
+            </div>
           </div>
         </div>
       </div>
