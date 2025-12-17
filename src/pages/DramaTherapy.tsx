@@ -42,8 +42,8 @@ const DramaTherapy = () => {
         <div className="absolute inset-0 z-0 bg-gradient-to-r from-background/90 via-background/50 to-transparent" />
         
         <div className="container mx-auto px-4 z-10">
-          <div className={`max-w-2xl ${language === 'ar' ? 'mr-0 ml-auto text-right' : 'ml-0 mr-auto text-left'}`}>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-lora font-bold mb-6 animate-fade-in-up text-primary drop-shadow-lg [text-shadow:_2px_2px_8px_rgb(0_0_0_/_20%)]">
+          <div className="max-w-2xl ml-0 mr-auto text-left">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-lora font-bold mb-6 animate-fade-in-up text-primary drop-shadow-2xl [text-shadow:_3px_3px_12px_rgb(0_0_0_/_40%),_0_0_30px_rgb(255_255_255_/_50%)]">
               {t.title}
             </h1>
           </div>
@@ -65,7 +65,7 @@ const DramaTherapy = () => {
               <img 
                 src={masksImage} 
                 alt="Drama therapy masks representing different emotions" 
-                className="rounded-2xl shadow-large w-full h-auto object-cover max-h-[300px]"
+                className="rounded-2xl shadow-large w-full h-auto object-contain max-h-[300px]"
               />
             </div>
             <div className="w-full md:w-3/5 space-y-6">
