@@ -22,17 +22,13 @@ import servicesImage from "@/assets/drama-therapy-concept.jpg";
  */
 const Services = () => {
   // Hooks & Translations
-  const { language } = useLanguage();
+  const {
+    language
+  } = useLanguage();
   const t = translations[language].services;
-
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
-      <PageHeader
-        title={t.title}
-        subtitle={t.subtitle}
-        imageSrc={servicesImage}
-      />
+      <PageHeader title={t.title} subtitle={t.subtitle} imageSrc={servicesImage} className="py-[10px]" />
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="max-w-4xl mx-auto">
@@ -90,15 +86,21 @@ const Services = () => {
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <span className="text-primary mr-3">•</span>
-                  <span dangerouslySetInnerHTML={{ __html: t.payment1.replace('Zelle', '<strong>Zelle</strong>').replace('Venmo', '<strong>Venmo</strong>') }} />
+                  <span dangerouslySetInnerHTML={{
+                  __html: t.payment1.replace('Zelle', '<strong>Zelle</strong>').replace('Venmo', '<strong>Venmo</strong>')
+                }} />
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-3">•</span>
-                  <span dangerouslySetInnerHTML={{ __html: t.payment2.replace('Cash', '<strong>Cash</strong>').replace('checks', '<strong>checks</strong>').replace('النقد', '<strong>النقد</strong>').replace('الشيكات', '<strong>الشيكات</strong>') }} />
+                  <span dangerouslySetInnerHTML={{
+                  __html: t.payment2.replace('Cash', '<strong>Cash</strong>').replace('checks', '<strong>checks</strong>').replace('النقد', '<strong>النقد</strong>').replace('الشيكات', '<strong>الشيكات</strong>')
+                }} />
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-3">•</span>
-                  <span dangerouslySetInnerHTML={{ __html: t.payment3.replace('not', '<strong>not</strong>').replace('لا', '<strong>لا</strong>') }} />
+                  <span dangerouslySetInnerHTML={{
+                  __html: t.payment3.replace('not', '<strong>not</strong>').replace('لا', '<strong>لا</strong>')
+                }} />
                 </li>
               </ul>
             </CardContent>
@@ -107,8 +109,6 @@ const Services = () => {
       </div>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Services;
