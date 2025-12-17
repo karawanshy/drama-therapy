@@ -15,7 +15,7 @@ const PageHeader = ({
   imageSrc
 }: PageHeaderProps) => {
   return <header className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
-      <img src={imageSrc} alt="" loading="eager" fetchPriority="high" className="absolute inset-0 z-0 w-full h-full object-top object-cover" />
+      <img src={imageSrc} alt="" loading="eager" fetchPriority="high" className="absolute inset-0 z-0 w-full h-full object-top object-fill" />
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-background/95 via-background/80 to-background/95" />
       
       <div className="container mx-auto px-4 z-10">
