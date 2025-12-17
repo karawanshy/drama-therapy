@@ -31,7 +31,7 @@ const DramaTherapy = () => {
       <Navigation />
       
       {/* Custom Header with left-aligned title and full lighter overlay */}
-      <header className="relative min-h-[60vh] flex items-center overflow-hidden pt-20">
+      <header className="relative min-h-screen flex items-center overflow-hidden pt-20">
         <img 
           src={conceptImage} 
           alt="" 

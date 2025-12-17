@@ -17,7 +17,6 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
 
 // Assets
-import heroImage from "@/assets/about-therapy-new.jpg";
 import therapistImage from "@/assets/therapist-profile.jpg";
 
 /**
@@ -36,39 +35,27 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <img 
-          src={heroImage} 
+          src={therapistImage} 
           alt="" 
           loading="eager"
           fetchPriority="high"
-          className="absolute inset-0 z-0 w-full h-full object-cover"
+          className="absolute inset-0 z-0 w-full h-full object-cover object-top"
         />
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-background/95 via-background/80 to-background/95" />
         
         <div className="container mx-auto px-4 z-10">
-          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            {/* Therapist Image on Left */}
-            <div className="w-48 md:w-64 lg:w-72 flex-shrink-0">
-              <img 
-                src={therapistImage} 
-                alt="Dr. Iman Kheil" 
-                className="rounded-2xl shadow-xl w-full h-auto object-cover"
-              />
-            </div>
-            
-            {/* Title and Content */}
-            <div className="flex-1 text-center md:text-left">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-lora font-bold mb-6 animate-fade-in-up text-primary" dangerouslySetInnerHTML={{ __html: t.title }} />
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-lora font-bold mb-6 animate-fade-in-up text-primary" dangerouslySetInnerHTML={{ __html: t.title }} />
 
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl animate-fade-in-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
-                {t.subtitle}
-              </p>
-              <div className="flex justify-center md:justify-start animate-fade-in-up [animation-delay:600ms] opacity-0 [animation-fill-mode:forwards]">
-                <Button asChild variant="glass" size="lg" className="text-lg hover:scale-105 border-[3px] shadow-[0_0_20px_rgba(66,99,130,0.3)] hover:shadow-[0_0_30px_rgba(66,99,130,0.5)]">
-                  <Link to="/drama-therapy">
-                    {t.learnMore}
-                  </Link>
-                </Button>
-              </div>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
+              {t.subtitle}
+            </p>
+            <div className="flex justify-center animate-fade-in-up [animation-delay:600ms] opacity-0 [animation-fill-mode:forwards]">
+              <Button asChild variant="glass" size="lg" className="text-lg hover:scale-105 border-[3px] shadow-[0_0_20px_rgba(66,99,130,0.3)] hover:shadow-[0_0_30px_rgba(66,99,130,0.5)]">
+                <Link to="/drama-therapy">
+                  {t.learnMore}
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
