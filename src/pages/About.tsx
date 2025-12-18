@@ -31,11 +31,11 @@ const About = () => {
       />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="prose prose-lg max-w-none fade-in-up">
             <div className="bg-card rounded-2xl shadow-lg overflow-hidden">
-              <div className="flex flex-col md:flex-row">
-                <div className="md:w-2/3 p-8 md:p-12">
+              <div className="flex flex-col md:flex-row items-start gap-8 p-8 md:p-12">
+                <div className="flex-1">
                   <p className="text-foreground leading-relaxed mb-6">
                     {language === 'en' ? (
                       <>
@@ -72,11 +72,11 @@ const About = () => {
                     )}
                   </p>
                 </div>
-                <div className="md:w-1/3">
+                <div className="md:w-auto shrink-0">
                   <img 
                     src={therapistImage} 
                     alt="Therapist at work" 
-                    className="w-full h-full object-cover min-h-[300px]"
+                    className="rounded-xl w-full md:w-80 object-cover"
                   />
                 </div>
               </div>
