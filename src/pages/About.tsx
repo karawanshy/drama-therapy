@@ -9,6 +9,7 @@ import { translations } from "@/translations";
 
 // Assets
 import heroImage from "@/assets/hero-drama-therapy.jpg";
+import therapistImage from "@/assets/about-therapist.jpg";
 
 /**
  * About Page Component
@@ -88,19 +89,27 @@ const About = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mt-8">
-            <div className="text-center">
-              <h3 className="font-lora text-xl font-semibold mb-2 text-primary">{t.education}</h3>
-              <p className="text-sm text-muted-foreground whitespace-pre-line">
-                {t.educationDesc}
-              </p>
+          <div className="flex flex-col md:flex-row gap-8 mt-12 items-center">
+            <div className="md:w-1/3">
+              <img 
+                src={therapistImage} 
+                alt="Therapist at work" 
+                className="rounded-2xl shadow-lg w-full object-cover"
+              />
             </div>
-
-            <div className="text-center">
-              <h3 className="font-lora text-xl font-semibold mb-2 text-primary">{t.experience}</h3>
-              <p className="text-sm text-muted-foreground whitespace-pre-line">
-                {t.experienceDesc}
-              </p>
+            <div className="md:w-2/3 bg-card p-8 rounded-2xl shadow-lg">
+              <div className="mb-6">
+                <h3 className="font-lora text-2xl font-semibold mb-3 text-primary">Education</h3>
+                <p className="text-foreground leading-relaxed">
+                  Ph.D. in Expressive Therapies Lesley University
+                </p>
+              </div>
+              <div>
+                <h3 className="font-lora text-2xl font-semibold mb-3 text-primary">Experience</h3>
+                <p className="text-foreground leading-relaxed">
+                  Individual & Group Therapy Children, Youth & Adults
+                </p>
+              </div>
             </div>
           </div>
         </div>
