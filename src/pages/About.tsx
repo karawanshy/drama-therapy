@@ -32,7 +32,7 @@ const About = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="max-w-4xl mx-auto">
           <div className="prose prose-lg max-w-none fade-in-up">
-            <div className="bg-card p-8 md:p-12 rounded-2xl shadow-lg mb-8">
+            <div className="bg-card p-8 md:p-12 rounded-2xl shadow-lg">
               <p className="text-foreground leading-relaxed mb-6">
                 {language === 'en' ? (
                   <>
@@ -75,7 +75,7 @@ const About = () => {
                 </p>
               </div>
 
-              <p className="text-foreground leading-relaxed">
+              <p className="text-foreground leading-relaxed mb-8">
                 {language === 'en' ? (
                   <>
                     I am passionate about promoting resilience and well-being through creative expression and am deeply committed to empowering individuals to overcome barriers and thrive.
@@ -86,29 +86,29 @@ const About = () => {
                   </>
                 )}
               </p>
-            </div>
-          </div>
 
-          <div className="flex flex-col md:flex-row gap-8 mt-12 items-center">
-            <div className="md:w-1/3">
-              <img 
-                src={therapistImage} 
-                alt="Therapist at work" 
-                className="rounded-2xl shadow-lg w-full object-cover"
-              />
-            </div>
-            <div className="md:w-2/3 bg-card p-8 rounded-2xl shadow-lg">
-              <div className="mb-6">
-                <h3 className="font-lora text-2xl font-semibold mb-3 text-primary">Education</h3>
-                <p className="text-foreground leading-relaxed">
-                  Ph.D. in Expressive Therapies Lesley University
-                </p>
-              </div>
-              <div>
-                <h3 className="font-lora text-2xl font-semibold mb-3 text-primary">Experience</h3>
-                <p className="text-foreground leading-relaxed">
-                  Individual & Group Therapy Children, Youth & Adults
-                </p>
+              <div className="flex flex-col md:flex-row gap-8 items-center border-t border-border pt-8">
+                <div className="md:w-1/3">
+                  <img 
+                    src={therapistImage} 
+                    alt="Therapist at work" 
+                    className="rounded-xl w-full object-cover"
+                  />
+                </div>
+                <div className="md:w-2/3">
+                  <div className="mb-6">
+                    <h3 className="font-lora text-2xl font-semibold mb-3 text-primary">Education</h3>
+                    <p className="text-foreground leading-relaxed">
+                      Ph.D. in Expressive Therapies Lesley University
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-lora text-2xl font-semibold mb-3 text-primary">Experience</h3>
+                    <p className="text-foreground leading-relaxed">
+                      Individual & Group Therapy Children, Youth & Adults
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
