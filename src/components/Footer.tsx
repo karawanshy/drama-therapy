@@ -10,11 +10,12 @@ import { useLanguage } from "@/contexts/LanguageContext";
  */
 const Footer = () => {
   // Hooks
-  const { language, setLanguage } = useLanguage();
-
-  return (
-    <footer className="bg-footer border-t border-border mt-20">
-      <div className="container mx-auto px-4 py-12">
+  const {
+    language,
+    setLanguage
+  } = useLanguage();
+  return <footer className="bg-footer border-t border-border mt-20">
+      <div className="container mx-auto px-4 py-12 bg-muted">
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <div>
             <h3 className="font-lora font-bold text-lg mb-2 text-primary">
@@ -43,24 +44,10 @@ const Footer = () => {
               {language === 'en' ? 'Translate' : 'ترجمة'}
             </h3>
             <div className="flex gap-2">
-              <button
-                onClick={() => setLanguage('en')}
-                className={`text-sm px-3 py-1 rounded transition-colors ${
-                  language === 'en'
-                    ? 'bg-primary text-primary-foreground'
-                    : 'bg-secondary text-muted-foreground hover:bg-secondary/80'
-                }`}
-              >
+              <button onClick={() => setLanguage('en')} className={`text-sm px-3 py-1 rounded transition-colors ${language === 'en' ? 'bg-primary text-primary-foreground' : 'bg-secondary text-muted-foreground hover:bg-secondary/80'}`}>
                 English
               </button>
-              <button
-                onClick={() => setLanguage('ar')}
-                className={`text-sm px-3 py-1 rounded transition-colors ${
-                  language === 'ar'
-                    ? 'bg-primary text-primary-foreground'
-                    : 'bg-secondary text-muted-foreground hover:bg-secondary/80'
-                }`}
-              >
+              <button onClick={() => setLanguage('ar')} className={`text-sm px-3 py-1 rounded transition-colors ${language === 'ar' ? 'bg-primary text-primary-foreground' : 'bg-secondary text-muted-foreground hover:bg-secondary/80'}`}>
                 العربية
               </button>
             </div>
@@ -72,8 +59,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
