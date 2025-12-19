@@ -34,7 +34,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           <div className="prose prose-lg max-w-none fade-in-up">
             <div className="bg-card rounded-2xl shadow-lg overflow-hidden">
-              <div className="flex flex-col md:flex-row items-start gap-8 p-8 md:p-12">
+              <div className="flex flex-col md:flex-row items-center gap-8 p-8 md:p-12">
                 <div className="flex-1">
                   <p className="text-foreground leading-relaxed mb-6">
                     {language === 'en' ? (
@@ -87,7 +87,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="flex flex-col md:flex-row gap-8 items-center">
+              <div className="flex flex-col md:flex-row gap-8 items-center p-8 md:p-12">
                 <div className="md:w-1/3">
                   <img 
                     src={therapistPortrait} 
@@ -97,26 +97,18 @@ const About = () => {
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-foreground leading-relaxed mb-6">
-                    {language === 'en' ? (
-                      <>
-                        I am passionate about promoting resilience and well-being through creative expression and am deeply committed to empowering individuals to overcome barriers and thrive.
-                      </>
-                    ) : (
-                      <>
-                        أنا شغوفة بتعزيز المرونة والرفاه النفسي من خلال التعبير الإبداعي، ومكرّسة لتمكين الأفراد من تجاوز العوائق وتحقيق الازدهار.
-                      </>
-                    )}
+                    {t.bio4}
                   </p>
                   <div className="mb-6">
-                    <h3 className="font-lora text-2xl font-semibold mb-3 text-primary">Education</h3>
-                    <p className="text-foreground leading-relaxed">
-                      Ph.D. in Expressive Therapies Lesley University
+                    <h3 className="font-lora text-2xl font-semibold mb-3 text-primary">{t.education}</h3>
+                    <p className="text-foreground leading-relaxed whitespace-pre-line">
+                      {t.educationDesc}
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-lora text-2xl font-semibold mb-3 text-primary">Experience</h3>
-                    <p className="text-foreground leading-relaxed">
-                      Individual & Group Therapy Children, Youth & Adults
+                    <h3 className="font-lora text-2xl font-semibold mb-3 text-primary">{t.experience}</h3>
+                    <p className="text-foreground leading-relaxed whitespace-pre-line">
+                      {t.experienceDesc}
                     </p>
                   </div>
                 </div>
