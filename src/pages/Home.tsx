@@ -52,7 +52,7 @@ const Home = () => {
               <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
                 {t.subtitle}
               </p>
-              <div className={`flex justify-center ${isRTL ? 'md:justify-end' : 'md:justify-start'} animate-fade-in-up [animation-delay:600ms] opacity-0 [animation-fill-mode:forwards]`}>
+              <div className="flex justify-center md:justify-start animate-fade-in-up [animation-delay:600ms] opacity-0 [animation-fill-mode:forwards]">
                 <Button asChild variant="glass" size="lg" className="text-lg hover:scale-105 border-[3px] shadow-[0_0_20px_rgba(66,99,130,0.3)] hover:shadow-[0_0_30px_rgba(66,99,130,0.5)]">
                   <Link to="/drama-therapy">
                     {t.learnMore}
