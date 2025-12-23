@@ -14,7 +14,7 @@ const Footer = () => {
     language,
     setLanguage
   } = useLanguage();
-  return <footer className="bg-background border-t border-border mt-20">
+  return <footer className="bg-footer border-t border-border mt-20">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <div>
