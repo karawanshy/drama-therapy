@@ -17,7 +17,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
 
 // Assets
-import therapistImage from "@/assets/therapist-profile.jpg";
+import therapistImage from "@/assets/therapist-hero.png";
 
 /**
  * Home Page Component
@@ -29,20 +29,22 @@ const Home = () => {
     language
   } = useLanguage();
   const t = translations[language].home;
+  const isRTL = language === 'ar';
+  
   return <div className="min-h-screen">
       <Navigation />
       
       {/* Hero Section - Split Layout */}
       <section className="relative min-h-screen overflow-hidden pt-20 items-end justify-start flex flex-row bg-muted">
         <div className="container mx-auto px-4 z-10">
-          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
-            {/* Image on Left */}
-            <div className="w-full md:w-1/2 justify-center mx-[100px] my-0 px-0 mb-0 mr-0 ml-0 flex flex-row pl-px md:flex md:items-center md:justify-end">
-              <img alt="Dr. Iman Kheil" loading="eager" fetchPriority="high" src="/lovable-uploads/d5f279fa-533e-4174-b203-4905cc640f55.png" className="w-72 md:w-80 lg:w-96 h-auto object-cover rounded-none shadow-none" />
+          <div className={`flex flex-col md:flex-row items-center gap-8 md:gap-16 ${isRTL ? 'md:flex-row-reverse' : ''}`}>
+            {/* Image */}
+            <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+              <img alt="Dr. Iman Kheil" loading="eager" fetchPriority="high" src={therapistImage} className="w-72 md:w-80 lg:w-96 h-auto object-cover rounded-none shadow-none" />
             </div>
             
-            {/* Text on Right */}
-            <div className="w-full md:w-1/2 text-center md:text-left">
+            {/* Text */}
+            <div className={`w-full md:w-1/2 text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-lora font-bold mb-6 animate-fade-in-up text-primary" dangerouslySetInnerHTML={{
               __html: t.title
             }} />
@@ -50,7 +52,7 @@ const Home = () => {
               <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in-up [animation-delay:200ms] opacity-0 [animation-fill-mode:forwards]">
                 {t.subtitle}
               </p>
-              <div className="flex justify-center md:justify-start animate-fade-in-up [animation-delay:600ms] opacity-0 [animation-fill-mode:forwards]">
+              <div className={`flex justify-center ${isRTL ? 'md:justify-end' : 'md:justify-start'} animate-fade-in-up [animation-delay:600ms] opacity-0 [animation-fill-mode:forwards]`}>
                 <Button asChild variant="glass" size="lg" className="text-lg hover:scale-105 border-[3px] shadow-[0_0_20px_rgba(66,99,130,0.3)] hover:shadow-[0_0_30px_rgba(66,99,130,0.5)]">
                   <Link to="/drama-therapy">
                     {t.learnMore}
