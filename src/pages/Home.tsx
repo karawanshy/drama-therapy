@@ -35,11 +35,11 @@ const Home = () => {
       <Navigation />
       
       {/* Hero Section - Split Layout */}
-      <section className="relative min-h-screen overflow-hidden pt-20 items-end justify-start flex flex-row bg-muted">
+      <section className="relative min-h-screen overflow-hidden pt-20 flex items-center justify-center bg-muted">
         <div className="container mx-auto px-4 z-10">
-          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 max-w-5xl mx-auto">
             {/* Image */}
-            <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+            <div className="w-full md:w-auto flex justify-center">
               <img alt="Dr. Iman Kheil" loading="eager" fetchPriority="high" src={therapistImage} className="w-72 md:w-80 lg:w-96 h-auto object-cover rounded-none shadow-none" />
             </div>
             
