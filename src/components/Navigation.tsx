@@ -14,8 +14,6 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/translations";
 
-// Utils
-import { preloadRouteImages } from "@/utils/imagePreloader";
 
 /**
  * Navigation Component
@@ -55,12 +53,6 @@ const Navigation = () => {
    */
   const isActive = (path: string) => location.pathname === path;
 
-  /**
-   * Preload images when hovering over navigation links
-   */
-  const handleLinkHover = (path: string) => {
-    preloadRouteImages(path);
-  };
   return <nav className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border shadow-soft">
       <div className="container mx-auto px-4 bg-primary-foreground">
         <div className="flex items-center justify-between h-20 bg-primary-foreground">
@@ -72,7 +64,7 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
-            {navLinks.map(link => <Link key={link.path} to={link.path} onMouseEnter={() => handleLinkHover(link.path)} className={`px-4 py-2 rounded-lg text-sm font-medium transition-smooth ${isActive(link.path) ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"}`}>
+            {navLinks.map(link => <Link key={link.path} to={link.path} className={`px-4 py-2 rounded-lg text-sm font-medium transition-smooth ${isActive(link.path) ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"}`}>
                 {link.name}
               </Link>)}
           </div>
@@ -86,7 +78,7 @@ const Navigation = () => {
         {/* Mobile Navigation */}
         {isOpen && <div className="md:hidden pb-4 animate-fade-in">
             <div className="flex flex-col space-y-2">
-              {navLinks.map(link => <Link key={link.path} to={link.path} onClick={() => setIsOpen(false)} onTouchStart={() => handleLinkHover(link.path)} className={`px-4 py-3 rounded-lg text-sm font-medium transition-smooth ${isActive(link.path) ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"}`}>
+              {navLinks.map(link => <Link key={link.path} to={link.path} onClick={() => setIsOpen(false)} className={`px-4 py-3 rounded-lg text-sm font-medium transition-smooth ${isActive(link.path) ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"}`}>
                   {link.name}
                 </Link>)}
             </div>

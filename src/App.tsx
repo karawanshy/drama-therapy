@@ -1,3 +1,6 @@
+// React
+import { useState, useEffect } from "react";
+
 // React Router
 import { Routes, Route } from "react-router-dom";
 
@@ -20,6 +23,9 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
+// Utils
+import { preloadAllImages } from "./utils/imagePreloader";
+
 // Query Client Configuration
 const queryClient = new QueryClient();
 
@@ -27,7 +33,25 @@ const queryClient = new QueryClient();
  * Main App Component
  * Provides routing and global providers for the application
  */
-const App = () => (
+const App = () => {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  useEffect(() => {
+    preloadAllImages().then(() => setImagesLoaded(true));
+  }, []);
+
+  if (!imagesLoaded) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-muted">
+        <div className="text-center">
+          <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+          <p className="text-muted-foreground">Loading...</p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       {/* Toast Notifications */}
@@ -49,7 +73,8 @@ const App = () => (
         <Route path="*" element={<NotFound />} />
       </Routes>
     </TooltipProvider>
-  </QueryClientProvider>
-);
+    </QueryClientProvider>
+  );
+};
 
 export default App;

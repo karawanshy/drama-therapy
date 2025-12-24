@@ -124,7 +124,7 @@ const Contact = () => {
         fetchPriority="high"
         className="fixed inset-0 z-0 w-full h-full object-cover"
       />
-      <div className="fixed inset-0 z-0 bg-gradient-to-b from-background/90 via-background/85 to-background/95" />
+      <div className="fixed inset-0 z-0 bg-gradient-to-b from-background/70 via-background/60 to-background/75" />
       
       <div className="relative z-10">
         <Navigation />
