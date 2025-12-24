@@ -44,10 +44,10 @@ const Footer = () => {
               {language === 'en' ? 'Translate' : 'ترجمة'}
             </h3>
             <div className="flex gap-2">
-              <button onClick={() => setLanguage('en')} className={`text-sm px-3 py-1 rounded transition-colors ${language === 'en' ? 'bg-primary text-primary-foreground' : 'bg-secondary text-muted-foreground hover:bg-secondary/80'}`}>
+              <button onClick={() => setLanguage('en')} className={`text-sm px-3 py-1 rounded transition-colors ${language === 'en' ? 'bg-primary text-primary-foreground' : 'bg-card text-muted-foreground hover:bg-card/80'}`}>
                 English
               </button>
-              <button onClick={() => setLanguage('ar')} className={`text-sm px-3 py-1 rounded transition-colors ${language === 'ar' ? 'bg-primary text-primary-foreground' : 'bg-secondary text-muted-foreground hover:bg-secondary/80'}`}>
+              <button onClick={() => setLanguage('ar')} className={`text-sm px-3 py-1 rounded transition-colors ${language === 'ar' ? 'bg-primary text-primary-foreground' : 'bg-card text-muted-foreground hover:bg-card/80'}`}>
                 العربية
               </button>
             </div>
