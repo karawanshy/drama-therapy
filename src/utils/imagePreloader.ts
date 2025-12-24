@@ -3,29 +3,37 @@
  * Preloads images to improve perceived performance
  */
 
-// Route-to-Image Mapping
-export const routeImages: Record<string, string[]> = {
-  '/': ['/src/assets/hero-drama-therapy.jpg'],
-  '/about': ['/src/assets/about-therapy-new.jpg'],
-  '/drama-therapy': ['/src/assets/drama-therapy-concept.jpg'],
-  '/services': ['/src/assets/services-header.jpg'],
-  '/contact': ['/src/assets/contact-curtains.jpg'],
-};
+// Import all images
+import heroImage from "@/assets/therapist-hero.png";
+import aboutImage from "@/assets/about-therapy-new.jpg";
+import dramaImage from "@/assets/drama-therapy-concept.jpg";
+import servicesImage from "@/assets/services-header.jpg";
+import contactImage from "@/assets/contact-curtains.jpg";
+
+// All images to preload
+const allImages = [
+  heroImage,
+  aboutImage,
+  dramaImage,
+  servicesImage,
+  contactImage,
+];
 
 /**
- * Preload images for a specific route
+ * Preload all site images
+ * Returns a promise that resolves when all images are loaded
  */
-export const preloadRouteImages = (route: string): void => {
-  const images = routeImages[route];
-  if (!images) return;
-
-  images.forEach((src) => {
-    const link = document.createElement('link');
-    link.rel = 'preload';
-    link.as = 'image';
-    link.href = src;
-    document.head.appendChild(link);
-  });
+export const preloadAllImages = (): Promise<void[]> => {
+  return Promise.all(
+    allImages.map((src) => {
+      return new Promise<void>((resolve) => {
+        const img = new Image();
+        img.onload = () => resolve();
+        img.onerror = () => resolve(); // Resolve even on error to not block
+        img.src = src;
+      });
+    })
+  );
 };
 
 /**
