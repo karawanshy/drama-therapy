@@ -23,22 +23,16 @@ import imaginationImage from "@/assets/imagination-child.jpg";
  */
 const DramaTherapy = () => {
   // Hooks & Translations
-  const { language } = useLanguage();
+  const {
+    language
+  } = useLanguage();
   const t = translations[language].dramatherapy;
-
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
       
       {/* Custom Header with left-aligned title and full lighter overlay */}
       <header className="relative min-h-screen flex items-center overflow-hidden pt-20">
-        <img 
-          src={conceptImage} 
-          alt="" 
-          loading="eager"
-          fetchPriority="high"
-          className="absolute inset-0 z-0 w-full h-full object-cover object-top"
-        />
+        <img src={conceptImage} alt="" loading="eager" fetchPriority="high" className="absolute inset-0 z-0 w-full h-full object-cover object-top" />
         <div className="absolute inset-0 z-0 bg-background/40" />
         
         <div className="container mx-auto px-4 z-10">
@@ -62,34 +56,22 @@ const DramaTherapy = () => {
           {/* First Section - Text Left, Image Right */}
           <div className={`flex flex-col ${language === 'ar' ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-12 items-center`}>
             <div className="w-full md:w-2/5">
-              <img 
-                src={masksImage} 
-                alt="Drama therapy masks representing different emotions" 
-                className="rounded-2xl shadow-large w-full h-auto object-contain max-h-[300px]"
-              />
+              <img alt="Drama therapy masks representing different emotions" className="rounded-2xl shadow-large w-full h-auto object-contain max-h-[300px]" src="/lovable-uploads/537be97a-4229-4ecd-aa2b-2988644c837c.jpg" />
             </div>
             <div className="w-full md:w-3/5 space-y-6">
               <p className="text-lg leading-relaxed">
-                {language === 'en' ? (
-                  <>
+                {language === 'en' ? <>
                     When words alone are not enough, creativity opens new pathways for processing feelings and experiences in ways that support healing and growth.
-                  </>
-                ) : (
-                  <>
+                  </> : <>
                     عندما لا تكفي الكلمات وحدها، يفتح الإبداع أبواباً جديدة لمعالجة المشاعر والتجارب بطرق تدعم الشفاء والنمو.
-                  </>
-                )}
+                  </>}
               </p>
               <p className="text-lg leading-relaxed">
-                {language === 'en' ? (
-                  <>
+                {language === 'en' ? <>
                     Drama therapy is a creative form of psychotherapy that uses theater techniques—such as role play, storytelling, improvisation, movement, and performance—as therapeutic tools. It is an active, experiential process.
-                  </>
-                ) : (
-                  <>
+                  </> : <>
                     العلاج بالدراما هو شكل إبداعي من العلاج النفسي يستخدم تقنيات المسرح — مثل لعب الأدوار، وسرد القصص، والارتجال، والحركة، والأداء — كأدوات علاجية. وهو عملية نشِطة وتجريبية.
-                  </>
-                )}
+                  </>}
               </p>
             </div>
           </div>
@@ -97,34 +79,22 @@ const DramaTherapy = () => {
           {/* Second Section - Image Left, Text Right */}
           <div className={`flex flex-col ${language === 'ar' ? 'md:flex-row-reverse' : 'md:flex-row'} gap-8 md:gap-12 items-center`}>
             <div className="w-full md:w-2/5">
-              <img 
-                src={imaginationImage} 
-                alt="Child using imagination in drama therapy" 
-                className="rounded-2xl shadow-large w-full h-auto object-cover max-h-[300px]"
-              />
+              <img src={imaginationImage} alt="Child using imagination in drama therapy" className="rounded-2xl shadow-large w-full h-auto object-cover max-h-[300px]" />
             </div>
             <div className="w-full md:w-3/5 space-y-6">
               <p className="text-lg leading-relaxed">
-                {language === 'en' ? (
-                  <>
+                {language === 'en' ? <>
                     Instead of only talking about experiences in a traditional therapy setting, clients can explore feelings, relationships, and challenges through dramatic expression.
-                  </>
-                ) : (
-                  <>
+                  </> : <>
                     حيث لا يقتصر الأمر على الحديث عن التجارب كما في العلاج التقليدي، بل يتم استكشاف المشاعر والعلاقات والتحديات من خلال التعبير الدرامي.
-                  </>
-                )}
+                  </>}
               </p>
               <p className="text-lg leading-relaxed">
-                {language === 'en' ? (
-                  <>
+                {language === 'en' ? <>
                     By entering a fictional world, individuals are able to view problems and conflicts from different perspectives, creating a unique mirror for self-exploration and reflection that can be both therapeutic and transformative.
-                  </>
-                ) : (
-                  <>
+                  </> : <>
                     ومن خلال الدخول في عالم تخيّلي، يمكنهم النظر إلى مشكلاتهم وصراعاتهم من زوايا جديدة، مما يخلق مرآة فريدة لاكتشاف الذات والتأمل، تكون علاجية وتحويلية في آنٍ واحد.
-                  </>
-                )}
+                  </>}
               </p>
             </div>
           </div>
@@ -186,8 +156,6 @@ const DramaTherapy = () => {
       </div>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default DramaTherapy;
