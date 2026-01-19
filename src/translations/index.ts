@@ -40,7 +40,7 @@ export const translations = {
       philosophy: 'My therapeutic philosophy is grounded in the belief that the arts offer a profound and authentic way to reach the human heart, mind, and soul.',
       bio4: 'I am passionate about promoting resilience and well-being through creative expression and am deeply committed to empowering individuals to overcome barriers and thrive.',
       education: 'Education',
-      educationDesc: 'Ph.D. in Expressive Therapies\nLesley University',
+      educationDesc: 'Ph.D. in Expressive Therapies\nLesley University, Cambridge',
       experience: 'Experience',
       experienceDesc: 'Individual & Group Therapy\nChildren, Youth & Adults'
     },
