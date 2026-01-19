@@ -25,7 +25,7 @@ const Footer = () => {
               {language === 'en' ? 'Drama Therapist, Ph.D.' : 'معالجة بالدراما،'}
             </p>
             <p className="text-sm text-muted-foreground">
-              {language === 'en' ? 'Expressive Therapies' : 'في العلاج التعبيري'}
+              {language === 'en' ? 'Expressive Therapies' : 'دكتوراه في العلاج التعبيري'}
             </p>
             <p className="text-sm text-muted-foreground">
               {language === 'en' ? 'Malden, MA' : 'مالدن، ماساتشوستس'}
