@@ -93,7 +93,7 @@ const DramaTherapy = () => {
                 {language === 'en' ? <>
                     By entering a fictional world, individuals are able to view problems and conflicts from different perspectives, creating a unique mirror for self-exploration and reflection that can be both therapeutic and transformative.
                   </> : <>
-                    ومن خلال الدخول في عالم تخيّلي، يمكنهم النظر إلى مشكلاتهم وصراعاتهم من زوايا جديدة، مما يخلق مرآة فريدة لاكتشاف الذات والتأمل، تكون علاجية وتحويلية في آنٍ واحد.
+                    ومن خلال الدخول في عالم تخيّلي، يمكنهم النظر إلى مشاكلهم وصراعاتهم من زوايا جديدة، مما يخلق مرآة فريدة لاكتشاف الذات والتأمل، تكون علاجية وتحويلية في آنٍ واحد.
                   </>}
               </p>
             </div>
