@@ -68,7 +68,7 @@ const Navigation = () => {
             {navLinks.map(link => <Link key={link.path} to={link.path} className={`px-4 py-2 rounded-lg text-sm font-medium transition-smooth ${isActive(link.path) ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"}`}>
                 {link.name}
               </Link>)}
-            <div className="flex items-center gap-1 ml-2 pl-2 border-l border-border">
+            <div className="flex items-center gap-1 ms-2 ps-2 border-s border-border">
               <button onClick={() => setLanguage('en')} className={`text-sm px-3 py-2 rounded-lg transition-colors ${language === 'en' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-secondary'}`}>
                 EN
               </button>
