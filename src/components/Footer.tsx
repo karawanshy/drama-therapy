@@ -1,5 +1,3 @@
-// Icons
-import { Globe } from "lucide-react";
 
 // Context
 import { useLanguage } from "@/contexts/LanguageContext";
