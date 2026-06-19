@@ -23,7 +23,8 @@ const Navigation = () => {
   // Hooks
   const location = useLocation();
   const {
-    language
+    language,
+    setLanguage
   } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -63,10 +64,18 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden md:flex items-center gap-1">
             {navLinks.map(link => <Link key={link.path} to={link.path} className={`px-4 py-2 rounded-lg text-sm font-medium transition-smooth ${isActive(link.path) ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"}`}>
                 {link.name}
               </Link>)}
+            <div className="flex items-center gap-1 ml-2 pl-2 border-l border-border">
+              <button onClick={() => setLanguage('en')} className={`text-sm px-3 py-2 rounded-lg transition-colors ${language === 'en' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-secondary'}`}>
+                EN
+              </button>
+              <button onClick={() => setLanguage('ar')} className={`text-sm px-3 py-2 rounded-lg transition-colors ${language === 'ar' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-secondary'}`}>
+                عربي
+              </button>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -81,6 +90,14 @@ const Navigation = () => {
               {navLinks.map(link => <Link key={link.path} to={link.path} onClick={() => setIsOpen(false)} className={`px-4 py-3 rounded-lg text-sm font-medium transition-smooth ${isActive(link.path) ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"}`}>
                   {link.name}
                 </Link>)}
+              <div className="flex gap-2 pt-2 border-t border-border">
+                <button onClick={() => setLanguage('en')} className={`flex-1 text-sm px-3 py-2 rounded-lg transition-colors ${language === 'en' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-secondary'}`}>
+                  English
+                </button>
+                <button onClick={() => setLanguage('ar')} className={`flex-1 text-sm px-3 py-2 rounded-lg transition-colors ${language === 'ar' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-secondary'}`}>
+                  العربية
+                </button>
+              </div>
             </div>
           </div>}
       </div>
