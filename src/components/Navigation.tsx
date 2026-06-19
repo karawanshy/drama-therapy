@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 // Icons
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 
 // UI Components
 import { Button } from "@/components/ui/button";
