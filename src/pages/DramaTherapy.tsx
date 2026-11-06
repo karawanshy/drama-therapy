@@ -60,18 +60,10 @@ const DramaTherapy = () => {
             </div>
             <div className="w-full md:w-3/5 space-y-6">
               <p className="text-lg leading-relaxed">
-                {language === 'en' ? <>
-                    When words alone are not enough, creativity opens new pathways for processing feelings and experiences in ways that support healing and growth.
-                  </> : <>
-                    عندما لا تكفي الكلمات وحدها، يفتح الإبداع أبواباً جديدة لمعالجة المشاعر والتجارب بطرق تدعم الشفاء والنمو.
-                  </>}
+                {t.intro1}
               </p>
               <p className="text-lg leading-relaxed">
-                {language === 'en' ? <>
-                    Drama therapy is a creative form of psychotherapy that uses theater techniques—such as role play, storytelling, improvisation, movement, and performance—as therapeutic tools. It is an active, experiential process.
-                  </> : <>
-                    العلاج بالدراما هو شكل إبداعي من العلاج النفسي يستخدم تقنيات المسرح — مثل لعب الأدوار، وسرد القصص، والارتجال، والحركة، والأداء — كأدوات علاجية. وهو عملية نشِطة وتجريبية.
-                  </>}
+                {t.experientialIntro}
               </p>
             </div>
           </div>
@@ -83,18 +75,10 @@ const DramaTherapy = () => {
             </div>
             <div className="w-full md:w-3/5 space-y-6">
               <p className="text-lg leading-relaxed">
-                {language === 'en' ? <>
-                    Instead of only talking about experiences in a traditional therapy setting, clients can explore feelings, relationships, and challenges through dramatic expression.
-                  </> : <>
-                    حيث لا يقتصر الأمر على الحديث عن التجارب كما في العلاج التقليدي، بل يتم استكشاف المشاعر والعلاقات والتحديات من خلال التعبير الدرامي.
-                  </>}
+                {t.dramaticExpression}
               </p>
               <p className="text-lg leading-relaxed">
-                {language === 'en' ? <>
-                    By entering a fictional world, individuals are able to view problems and conflicts from different perspectives, creating a unique mirror for self-exploration and reflection that can be both therapeutic and transformative.
-                  </> : <>
-                    ومن خلال الدخول في عالم تخيّلي، يمكنهم النظر إلى مشاكلهم وصراعاتهم من زوايا جديدة، مما يخلق مرآة فريدة لاكتشاف الذات والتأمل، تكون علاجية وتحويلية في آنٍ واحد.
-                  </>}
+                {t.intro5}
               </p>
             </div>
           </div>

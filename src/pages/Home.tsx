@@ -35,16 +35,14 @@ const Home = () => {
       <Navigation />
       
       {/* Hero Section - Split Layout */}
-      <section className="relative min-h-screen overflow-hidden pt-20 items-end justify-center flex flex-row bg-muted">
+      <section className="relative overflow-hidden pt-20 bg-muted">
         <div className="container mx-auto px-4 z-10 max-w-5xl">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
-            {/* Image */}
-            <div className="w-full md:w-auto flex justify-center">
-              <img alt="Dr. Iman Kheil" loading="eager" fetchPriority="high" src={therapistImage} className="w-72 md:w-80 lg:w-96 h-auto object-cover rounded-none shadow-none" />
-            </div>
+          <div className="flex flex-col-reverse md:flex-row items-center md:items-end justify-center gap-6 md:gap-16 pt-10 md:pt-14">
+            {/* Image - sits on the bottom edge because the cutout photo is cropped there */}
+            <img alt="Dr. Iman Kheil" loading="eager" fetchPriority="high" src={therapistImage} className="block shrink-0 w-[202px] md:w-56 lg:w-[269px] h-auto" />
             
             {/* Text */}
-            <div className={`w-full md:w-1/2 text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
+            <div className={`w-full md:w-1/2 md:self-center md:pb-14 text-center ${isRTL ? 'md:text-right' : 'md:text-left'}`}>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-lora font-bold mb-6 animate-fade-in-up text-primary" dangerouslySetInnerHTML={{
               __html: t.title
             }} />
@@ -124,7 +122,7 @@ const Home = () => {
               {t.quote}
             </blockquote>
             <p className="text-lg text-muted-foreground animate-fade-in [animation-delay:200ms]">
-              {language === 'en' ? '— Dr. Iman Kheil' : '— د. ايمان كحيل'}
+              — {translations[language].common.name}
             </p>
           </div>
         </div>
