@@ -233,7 +233,7 @@ export const translations = {
     common: {
       name: 'Dr. Iman Kheil',
       role: 'Drama Terapisti, ',
-      degree: 'Dışavurumcu Terapiler Doktorası',
+      degree: 'Dışavurumcu Sanat Terapileri Doktorası',
       location: 'Malden, Massachusetts',
       contact: 'İletişim',
       rights: 'Tüm hakları saklıdır.'
@@ -271,14 +271,14 @@ export const translations = {
     },
     about: {
       title: 'Hakkımda',
-      subtitle: 'Drama Terapisti, Dışavurumcu Terapiler Doktorası',
-      bio1: 'Duygusal iyileşmeyi ve kişisel gelişimi desteklemek için dışavurumcu ve yaratıcı sanatları kullanma konusunda uzmanlaşmış bir drama terapistiyim. Cambridge, Massachusetts\'teki Lesley Üniversitesi\'nden Dışavurumcu Terapiler alanında doktora derecesine, Drama Terapisi odaklı Yaratıcı Sanat Terapileri alanında yüksek lisans derecesine ve Psikoloji ve Eğitim alanında lisans derecesine sahibim.',
+      subtitle: 'Drama Terapisti, Dışavurumcu Sanat Terapileri Doktorası',
+      bio1: 'Duygusal iyileşmeyi ve kişisel gelişimi desteklemek için dışavurumcu ve yaratıcı sanatları kullanma konusunda uzmanlaşmış bir drama terapistiyim. Cambridge, Massachusetts\'teki Lesley Üniversitesi\'nden Dışavurumcu Sanat Terapileri alanında doktora derecesine, Drama Terapisi odaklı Yaratıcı Sanat Terapileri alanında yüksek lisans derecesine ve Psikoloji ve Eğitim alanında lisans derecesine sahibim.',
       bio2: 'Yıllar boyunca çocuklar, gençler ve yetişkinlerle hem bireysel hem de grup çalışmalarında kapsamlı deneyim edindim. Şu anda Malden, Massachusetts\'te bir toplum merkezinde terapi seansları yürütüyorum. Önceki klinik çalışmalarım arasında Lowell, Massachusetts\'teki Trauma and Family Integration (TFI) kurumunda terapist olarak görev yapmak ve davranışsal ve ruh sağlığı sorunları yaşayan genç danışanlara terapi sunmak yer alıyor.',
       bio3: 'Amerika Birleşik Devletleri\'ne taşınmadan önce Filistin\'in çeşitli yerlerinde toplum temelli terapi atölyeleri düzenleyip yürüttüm, bireysel ve grup terapisi seansları gerçekleştirdim. 2018\'de ayrıca Hindistan Yaratıcı Hareket Terapisi Derneği (CMTAI) konferansında Drama Terapisi kolaylaştırıcısı olarak görev aldım.',
       philosophy: 'Terapi felsefem, sanatın insanın kalbine, zihnine ve ruhuna ulaşmanın derin ve sahici bir yolunu sunduğu inancına dayanır.',
       bio4: 'Yaratıcı ifade yoluyla psikolojik dayanıklılığı ve iyi oluşu desteklemek benim için bir tutku; bireylerin engelleri aşmalarını ve gelişip güçlenmelerini sağlamaya kendimi adadım.',
       education: 'Eğitim',
-      educationDesc: 'Dışavurumcu Terapiler Doktorası\nLesley Üniversitesi, Cambridge',
+      educationDesc: 'Dışavurumcu Sanat Terapileri Doktorası\nLesley Üniversitesi, Cambridge',
       experience: 'Deneyim',
       experienceDesc: 'Bireysel ve Grup Terapisi\nÇocuklar, Gençler ve Yetişkinler'
     },
