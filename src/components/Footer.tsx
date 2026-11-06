@@ -3,6 +3,14 @@ import { Globe } from "lucide-react";
 
 // Context
 import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/translations";
+
+// Language switcher options, labelled in their own language
+const LANGUAGE_OPTIONS = [
+  { code: 'en', label: 'English' },
+  { code: 'ar', label: 'العربية' },
+  { code: 'tr', label: 'Türkçe' },
+] as const;
 
 /**
  * Footer Component
@@ -14,26 +22,27 @@ const Footer = () => {
     language,
     setLanguage
   } = useLanguage();
+  const t = translations[language].common;
   return <footer className="bg-muted border-t border-border mt-20">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <div>
             <h3 className="font-lora font-bold text-lg mb-2 text-primary">
-              {language === 'en' ? 'Dr. Iman Kheil' : 'د. ايمان كحيل'}
+              {t.name}
             </h3>
             <p className="text-sm text-muted-foreground">
-              {language === 'en' ? 'Drama Therapist, ' : 'معالجة بالدراما،'}
+              {t.role}
             </p>
             <p className="text-sm text-muted-foreground">
-              {language === 'en' ? 'Ph.D. in Expressive Therapies' : 'دكتوراه في العلاج التعبيري'}
+              {t.degree}
             </p>
             <p className="text-sm text-muted-foreground">
-              {language === 'en' ? 'Malden, MA' : 'مالدن، ماساتشوستس'}
+              {t.location}
             </p>
           </div>
           <div>
             <h3 className="font-lora font-bold text-lg mb-2 text-primary">
-              {language === 'en' ? 'Contact' : 'التواصل'}
+              {t.contact}
             </h3>
             <p className={`text-sm text-muted-foreground ${language === 'ar' ? 'text-right' : ''}`} dir="ltr">+1 617 545 5218</p>
             <p className="text-sm text-muted-foreground">Dr.imankheil@gmail.com</p>
@@ -41,21 +50,18 @@ const Footer = () => {
           <div>
             <h3 className="font-lora font-bold text-lg mb-2 text-primary flex items-center gap-2">
               <Globe className="h-4 w-4" />
-              {language === 'en' ? 'Translate' : 'ترجمة'}
+              {t.translate}
             </h3>
-            <div className="flex gap-2">
-              <button onClick={() => setLanguage('en')} className={`text-sm px-3 py-1 rounded transition-colors ${language === 'en' ? 'bg-primary text-primary-foreground' : 'bg-card text-muted-foreground hover:bg-card/80'}`}>
-                English
-              </button>
-              <button onClick={() => setLanguage('ar')} className={`text-sm px-3 py-1 rounded transition-colors ${language === 'ar' ? 'bg-primary text-primary-foreground' : 'bg-card text-muted-foreground hover:bg-card/80'}`}>
-                العربية
-              </button>
+            <div className="flex flex-wrap gap-2">
+              {LANGUAGE_OPTIONS.map(({ code, label }) => <button key={code} onClick={() => setLanguage(code)} className={`text-sm px-3 py-1 rounded transition-colors ${language === code ? 'bg-primary text-primary-foreground' : 'bg-card text-muted-foreground hover:bg-card/80'}`}>
+                  {label}
+                </button>)}
             </div>
           </div>
         </div>
         <div className="text-center mt-8 pt-8 border-t border-border">
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Dr. Iman Kheil. All rights reserved.
+            © {new Date().getFullYear()} Dr. Iman Kheil. {t.rights}
           </p>
         </div>
       </div>

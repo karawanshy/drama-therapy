@@ -1,5 +1,14 @@
 export const translations = {
   en: {
+    common: {
+      name: 'Dr. Iman Kheil',
+      role: 'Drama Therapist, ',
+      degree: 'Ph.D. in Expressive Therapies',
+      location: 'Malden, MA',
+      contact: 'Contact',
+      translate: 'Translate',
+      rights: 'All rights reserved.'
+    },
     nav: {
       home: 'Home',
       about: 'About',
@@ -48,6 +57,8 @@ export const translations = {
       title: 'What is Drama Therapy?',
       quote: 'I believe that if the possible is not working, then let\'s try the impossible.',
       intro1: 'When words alone are not enough, creativity opens new pathways for processing feelings and experiences in ways that support healing and growth.',
+      experientialIntro: 'Drama therapy is a creative form of psychotherapy that uses theater techniques—such as role play, storytelling, improvisation, movement, and performance—as therapeutic tools. It is an active, experiential process.',
+      dramaticExpression: 'Instead of only talking about experiences in a traditional therapy setting, clients can explore feelings, relationships, and challenges through dramatic expression.',
       intro2: 'Drama therapy is a creative form of psychotherapy that uses theater techniques—such as role play, storytelling, improvisation, movement, and performance—as therapeutic tools. It is an active, experiential process. Instead of only talking about experiences in a traditional therapy setting, clients can explore feelings, relationships, and challenges through dramatic expression.',
       intro3: 'The goal is not to create a polished performance, but rather to encourage self-expression, healing, and personal growth.',
       intro4: 'Drama therapy is not only for addressing psychological challenges — it is also a powerful tool for personal development. It can deepen self-understanding, strengthen relationships, and nurture greater self-awareness and connection. Through role play, improvisation, and guided activities, clients can safely explore emotions, build coping strategies, and strengthen their sense of self.',
@@ -88,10 +99,32 @@ export const translations = {
       message: 'Message',
       messagePlaceholder: 'Tell me about what brings you here and how I can help...',
       contactMe: 'Contact Me',
-      sending: 'Sending...'
+      sending: 'Sending...',
+      successTitle: 'Message sent!',
+      successDesc: 'Thank you for reaching out. I\'ll get back to you soon.',
+      errorTitle: 'Error',
+      errorDesc: 'Failed to send message. Please try again.',
+      nameTooShort: 'Name must be at least 2 characters',
+      invalidEmail: 'Please enter a valid email address',
+      messageTooShort: 'Message must be at least 10 characters'
+    },
+    notFound: {
+      title: 'Page Not Found',
+      description: 'The page you\'re looking for doesn\'t exist or has been moved.',
+      goHome: 'Go Home',
+      contactMe: 'Contact Me'
     }
   },
   ar: {
+    common: {
+      name: 'د. ايمان كحيل',
+      role: 'معالجة بالدراما،',
+      degree: 'دكتوراه في العلاج التعبيري',
+      location: 'مالدن، ماساتشوستس',
+      contact: 'التواصل',
+      translate: 'ترجمة',
+      rights: 'جميع الحقوق محفوظة.'
+    },
     nav: {
       home: 'الرئيسية',
       about: 'عني',
@@ -126,9 +159,9 @@ export const translations = {
     about: {
       title: 'عني',
       subtitle: 'معالجة بالدراما، دكتوراه في العلاج التعبيري',
-      bio1: 'أنا معالجة بالدراما متخصصة في استخدام الفنون التعبيرية والإبداعية لدعم الشفاء العاطفي والنمو الشخصي. أحمل دكتوراه في العلاج التعبيري من جامعة Lesley في كامبريدج، ماساتشوستس، ودرجة الماجستير في العلاج بالفنون الإبداعية بتخصص العلاج بالدراما، ودرجة البكالوريوس في علم النفس والتربية.',
+      bio1: 'أنا معالجة بالدراما متخصصة في استخدام الفنون التعبيرية والإبداعية لدعم الشفاء العاطفي والنمو الشخصي. حاصله على دكتوراه في العلاج التعبيري من جامعة Lesley في كامبريدج، ماساتشوستس، ودرجة الماجستير في العلاج بالفنون الإبداعية بتخصص العلاج بالدراما، ودرجة البكالوريوس في علم النفس والتربية.',
       bio2: 'على مدار السنوات، عملت بشكل موسّع مع الأطفال، والمراهقين، والبالغين في جلسات فردية وجماعية. أقدّم حالياً جلسات علاجية في مركز مجتمعي في مالدن، ماساتشوستس. أما خبرتي السابقة فتشمل عملي كمعالجة في مركز الدمج الأسري والصدمات (TFI) في لويل، ماساتشوستس، حيث قدمت علاجاً لعملاء شباب يواجهون تحديات سلوكية ونفسية.',
-      bio3: 'وقبل انتقالي إلى الولايات المتحدة، نظّمت وسهّلت ورش علاج مجتمعية، وأدرت جلسات علاج فردية وجماعية في فلسطين. وفي عام 2018، شاركت كميسّرة للعلاج بالدراما في مؤتمر جمعية العلاج بالحركة الإبداعية في الهند (CMTAI).',
+      bio3: 'وقبل انتقالي إلى الولايات المتحدة، نظّمت وسهّلت ورش علاج مجتمعية، وأدرت جلسات علاج فردية وجماعية في فلسطين. وفي عام 2018، شاركت كميسّرة للعلاج بالدراما في مؤتمر جمعية العلاج بالحركة الإبداعية في نيودلهي, الهند (CMTAI).',
       philosophy: 'فلسفتي العلاجية ترتكز على الإيمان بأن الفنون تقدّم وسيلة عميقة وصادقة للوصول إلى قلب الإنسان وعقله وروحه.',
       bio4: 'أنا شغوفة بتعزيز المرونة والرفاه النفسي من خلال التعبير الإبداعي، ومكرّسة لتمكين الأفراد من تجاوز العوائق وتحقيق الازدهار.',
       education: 'التعليم',
@@ -140,6 +173,8 @@ export const translations = {
       title: 'ما هو العلاج بالدراما؟',
       quote: 'إن لم ينجح الممكن، فلنجرب المستحيل.',
       intro1: 'عندما لا تكفي الكلمات وحدها، يفتح الإبداع أبواباً جديدة لمعالجة المشاعر والتجارب بطرق تدعم الشفاء والنمو.',
+      experientialIntro: 'العلاج بالدراما هو شكل إبداعي من العلاج النفسي يستخدم تقنيات المسرح — مثل لعب الأدوار، وسرد القصص، والارتجال، والحركة، والأداء — كأدوات علاجية. وهو عملية نشِطة وتجريبية.',
+      dramaticExpression: 'حيث لا يقتصر الأمر على الحديث عن التجارب كما في العلاج التقليدي، بل يتم استكشاف المشاعر والعلاقات والتحديات من خلال التعبير الدرامي.',
       intro2: 'العلاج بالدراما هو شكل إبداعي من العلاج النفسي يستخدم تقنيات المسرح — مثل لعب الأدوار، وسرد القصص، والارتجال، والحركة، والأداء — كأدوات علاجية. وهو عملية نشِطة وتجريبية، حيث لا يقتصر الأمر على الحديث عن التجارب كما في العلاج التقليدي، بل يتم استكشاف المشاعر والعلاقات والتحديات من خلال التعبير الدرامي.',
       intro3: 'الهدف ليس إنتاج عرض متقن، بل تشجيع التعبير الذاتي، والشفاء، والنمو الشخصي. العلاج بالدراما لا يُستخدم فقط لعلاج الاضطرابات النفسية، بل هو أيضاً أداة قوية للتطوير الذاتي.',
       intro4: 'من خلال لعب الأدوار والارتجال والأنشطة الموجهة، يمكن للعملاء استكشاف مشاعرهم بأمان، وبناء استراتيجيات للتأقلم، وتعزيز إحساسهم بالذات.',
@@ -180,7 +215,136 @@ export const translations = {
       message: 'الرسالة',
       messagePlaceholder: 'أخبرني عما جاء بك إلى هنا وكيف يمكنني المساعدة...',
       contactMe: 'تواصل معي',
-      sending: 'جاري الإرسال...'
+      sending: 'جاري الإرسال...',
+      successTitle: 'تم إرسال الرسالة!',
+      successDesc: 'شكراً لتواصلك. سأرد عليك قريباً.',
+      errorTitle: 'خطأ',
+      errorDesc: 'فشل إرسال الرسالة. يرجى المحاولة مرة أخرى.',
+      nameTooShort: 'يجب أن يتكون الاسم من حرفين على الأقل',
+      invalidEmail: 'يرجى إدخال عنوان بريد إلكتروني صالح',
+      messageTooShort: 'يجب أن تتكون الرسالة من 10 أحرف على الأقل'
+    },
+    notFound: {
+      title: 'الصفحة غير موجودة',
+      description: 'الصفحة التي تبحث عنها غير موجودة أو تم نقلها.',
+      goHome: 'العودة إلى الرئيسية',
+      contactMe: 'تواصل معي'
+    }
+  },
+  tr: {
+    common: {
+      name: 'Dr. Iman Kheil',
+      role: 'Drama Terapisti, ',
+      degree: 'Dışavurumcu Terapiler Doktorası',
+      location: 'Malden, Massachusetts',
+      contact: 'İletişim',
+      translate: 'Dil',
+      rights: 'Tüm hakları saklıdır.'
+    },
+    nav: {
+      home: 'Ana Sayfa',
+      about: 'Hakkımda',
+      dramatherapy: 'Drama Terapisi',
+      services: 'Hizmetler',
+      contact: 'İletişim'
+    },
+    home: {
+      title: 'Drama Terapisi<br/><span class="whitespace-nowrap text-5xl md:text-6xl">Dr. Iman Kheil</span>',
+      subtitle: 'Yaratıcı ifade ve tiyatronun dönüştürücü gücüyle iyileşme',
+      learnMore: 'Daha Fazla Bilgi',
+      whenWordsArentEnough: 'Kelimeler Yetmediğinde',
+      whenWordsDesc: 'Drama terapisi, duygularınızı keşfetmenize, psikolojik dayanıklılığınızı güçlendirmenize ve kişisel gelişiminiz için yeni yollar bulmanıza yardımcı olmak üzere yaratıcı ifadenin iyileştirici gücünden yararlanır.',
+      creativeExpression: 'Yaratıcı İfade',
+      creativeExpressionDesc: 'Duygularınızı güvenli bir şekilde keşfetmek için rol oynama, hikâye anlatımı ve doğaçlama gibi tiyatro tekniklerini kullanın.',
+      emotionalHealing: 'Duygusal İyileşme',
+      emotionalHealingDesc: 'Deneyimlerinizi ve duygularınızı gerçek bir iyileşmeyi ve kişisel dönüşümü destekleyecek şekilde işleyin.',
+      personalGrowth: 'Kişisel Gelişim',
+      personalGrowthDesc: 'Öz farkındalığınızı güçlendirin, ilişkilerinizi derinleştirin ve hayatın zorluklarıyla başa çıkma stratejileri geliştirin.',
+      quote: 'Mümkün olan işe yaramıyorsa, o zaman imkânsızı deneyelim.',
+      howCanIHelp: 'Nasıl Yardımcı Olabilirim',
+      howCanIHelpDesc: 'Size özel yolculuğunuza göre uyarlanmış terapi seansları',
+      individualSessions: 'Bireysel Seanslar',
+      individualSessionsDesc: 'Drama terapisi aracılığıyla kişisel yolculuğunuzu keşfetmeniz için size özel zaman ayrılan birebir seanslar.',
+      groupSessions: 'Grup Seansları',
+      groupSessionsDesc: 'Destekleyici bir grup ortamında paylaşılan iyileşmenin ve yaratıcı ifadenin gücünü deneyimleyin.',
+      viewDetails: 'Detayları Gör',
+      readyToBegin: 'Yolculuğunuza Başlamaya Hazır mısınız?',
+      readyToBeginDesc: 'Yaratıcı ifade yoluyla iyileşme ve gelişim için ilk adımı atın.',
+      scheduleSession: 'Seans Planlayın'
+    },
+    about: {
+      title: 'Hakkımda',
+      subtitle: 'Drama Terapisti, Dışavurumcu Terapiler Doktorası',
+      bio1: 'Duygusal iyileşmeyi ve kişisel gelişimi desteklemek için dışavurumcu ve yaratıcı sanatları kullanma konusunda uzmanlaşmış bir drama terapistiyim. Cambridge, Massachusetts\'teki Lesley Üniversitesi\'nden Dışavurumcu Terapiler alanında doktora derecesine, Drama Terapisi odaklı Yaratıcı Sanat Terapileri alanında yüksek lisans derecesine ve Psikoloji ve Eğitim alanında lisans derecesine sahibim.',
+      bio2: 'Yıllar boyunca çocuklar, gençler ve yetişkinlerle hem bireysel hem de grup çalışmalarında kapsamlı deneyim edindim. Şu anda Malden, Massachusetts\'te bir toplum merkezinde terapi seansları yürütüyorum. Önceki klinik çalışmalarım arasında Lowell, Massachusetts\'teki Trauma and Family Integration (TFI) kurumunda terapist olarak görev yapmak ve davranışsal ve ruh sağlığı sorunları yaşayan genç danışanlara terapi sunmak yer alıyor.',
+      bio3: 'Amerika Birleşik Devletleri\'ne taşınmadan önce Filistin\'in çeşitli yerlerinde toplum temelli terapi atölyeleri düzenleyip yürüttüm, bireysel ve grup terapisi seansları gerçekleştirdim. 2018\'de ayrıca Hindistan Yaratıcı Hareket Terapisi Derneği (CMTAI) konferansında Drama Terapisi kolaylaştırıcısı olarak görev aldım.',
+      philosophy: 'Terapi felsefem, sanatın insanın kalbine, zihnine ve ruhuna ulaşmanın derin ve sahici bir yolunu sunduğu inancına dayanır.',
+      bio4: 'Yaratıcı ifade yoluyla psikolojik dayanıklılığı ve iyi oluşu desteklemek benim için bir tutku; bireylerin engelleri aşmalarını ve gelişip güçlenmelerini sağlamaya kendimi adadım.',
+      education: 'Eğitim',
+      educationDesc: 'Dışavurumcu Terapiler Doktorası\nLesley Üniversitesi, Cambridge',
+      experience: 'Deneyim',
+      experienceDesc: 'Bireysel ve Grup Terapisi\nÇocuklar, Gençler ve Yetişkinler'
+    },
+    dramatherapy: {
+      title: 'Drama Terapisi Nedir?',
+      quote: 'İnanıyorum ki mümkün olan işe yaramıyorsa, imkânsızı denemeliyiz.',
+      intro1: 'Kelimeler tek başına yetmediğinde yaratıcılık, duyguları ve deneyimleri iyileşmeyi ve gelişimi destekleyecek şekilde işlemek için yeni yollar açar.',
+      experientialIntro: 'Drama terapisi, rol oynama, hikâye anlatımı, doğaçlama, hareket ve performans gibi tiyatro tekniklerini terapötik araçlar olarak kullanan yaratıcı bir psikoterapi biçimidir. Aktif ve deneyimsel bir süreçtir.',
+      dramaticExpression: 'Danışanlar, geleneksel bir terapi ortamında olduğu gibi deneyimlerini yalnızca konuşmakla kalmaz; duygularını, ilişkilerini ve zorluklarını dramatik ifade yoluyla keşfedebilir.',
+      intro2: 'Drama terapisi, rol oynama, hikâye anlatımı, doğaçlama, hareket ve performans gibi tiyatro tekniklerini terapötik araçlar olarak kullanan yaratıcı bir psikoterapi biçimidir. Aktif ve deneyimsel bir süreçtir. Danışanlar, geleneksel bir terapi ortamında olduğu gibi deneyimlerini yalnızca konuşmakla kalmaz; duygularını, ilişkilerini ve zorluklarını dramatik ifade yoluyla keşfedebilir.',
+      intro3: 'Amaç kusursuz bir gösteri ortaya koymak değil, kendini ifade etmeyi, iyileşmeyi ve kişisel gelişimi teşvik etmektir.',
+      intro4: 'Drama terapisi yalnızca psikolojik zorluklarla baş etmek için değil, aynı zamanda kişisel gelişim için de güçlü bir araçtır. Kendini anlamayı derinleştirebilir, ilişkileri güçlendirebilir, öz farkındalığı ve bağ kurmayı besleyebilir. Danışanlar rol oynama, doğaçlama ve yönlendirilmiş etkinlikler aracılığıyla duygularını güvenle keşfedebilir, başa çıkma stratejileri geliştirebilir ve benlik duygularını güçlendirebilir.',
+      intro5: 'Bireyler kurgusal bir dünyaya adım atarak sorunlara ve çatışmalara farklı açılardan bakabilir; bu da kendini keşfetme ve üzerine düşünme için hem terapötik hem de dönüştürücü olabilecek eşsiz bir ayna yaratır.',
+      creativeExpression: 'Yaratıcı İfade',
+      creativeExpressionDesc: 'Kelimelerin anlatamadığı duyguları ifade etmek için rol oynama, hikâye anlatımı ve doğaçlama gibi tiyatro tekniklerini kullanın.',
+      emotionalHealing: 'Duygusal İyileşme',
+      emotionalHealingDesc: 'Travmayı, yası ve zor duyguları güvenli ve destekleyici bir terapötik ortamda işleyin.',
+      relationshipBuilding: 'İlişki Kurma',
+      relationshipBuildingDesc: 'Daha güçlü iletişim becerileri geliştirin; kendinizle ve başkalarıyla bağınızı derinleştirin.',
+      personalGrowth: 'Kişisel Gelişim',
+      personalGrowthDesc: 'Yeni bakış açıları keşfedin, psikolojik dayanıklılığınızı güçlendirin, benlik ve amaç duygunuzu pekiştirin.'
+    },
+    services: {
+      title: 'Hizmetler',
+      subtitle: 'Yolculuğunuza göre uyarlanmış profesyonel drama terapisi seansları',
+      individualSessions: 'Bireysel Seanslar',
+      individualSessionsDesc: 'Tüm bireysel seanslar 60 dakikadır ve drama terapisi aracılığıyla kişisel yolculuğunuzu keşfetmeniz için size özel birebir zaman sunar.',
+      price: '$150',
+      priceDesc: '60 dakika',
+      groupSessions: 'Grup Seansları',
+      groupSessionsDesc: 'Destekleyici bir grup ortamında paylaşılan iyileşmenin ve yaratıcı ifadenin gücünü deneyimleyin.',
+      contactMe: 'Benimle iletişime geçin',
+      groupInfo: 've grup terapisi ile ücretleri hakkında bilgi alın.',
+      paymentInfo: 'Ödeme Bilgileri',
+      paymentDesc: 'Size kolaylık sağlamak için esnek ödeme seçenekleri sunuyorum:',
+      payment1: 'Zelle ve Venmo',
+      payment2: 'Nakit ve çek',
+      payment3: 'Sigorta kabul etmiyorum'
+    },
+    contact: {
+      title: 'İletişim',
+      sendMessage: 'Mesaj Gönderin',
+      name: 'Ad Soyad',
+      namePlaceholder: 'Adınız',
+      email: 'E-posta',
+      emailPlaceholder: 'your.email@example.com',
+      message: 'Mesaj',
+      messagePlaceholder: 'Sizi buraya neyin getirdiğini ve nasıl yardımcı olabileceğimi anlatın...',
+      contactMe: 'Benimle İletişime Geçin',
+      sending: 'Gönderiliyor...',
+      successTitle: 'Mesajınız gönderildi!',
+      successDesc: 'Ulaştığınız için teşekkür ederim. En kısa sürede size dönüş yapacağım.',
+      errorTitle: 'Hata',
+      errorDesc: 'Mesaj gönderilemedi. Lütfen tekrar deneyin.',
+      nameTooShort: 'Ad en az 2 karakter olmalıdır',
+      invalidEmail: 'Lütfen geçerli bir e-posta adresi girin',
+      messageTooShort: 'Mesaj en az 10 karakter olmalıdır'
+    },
+    notFound: {
+      title: 'Sayfa Bulunamadı',
+      description: 'Aradığınız sayfa mevcut değil veya taşınmış.',
+      goHome: 'Ana Sayfaya Dön',
+      contactMe: 'Benimle İletişime Geçin'
     }
   }
 };

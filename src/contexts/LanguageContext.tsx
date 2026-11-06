@@ -2,7 +2,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 // Types
-type Language = 'en' | 'ar';
+type Language = 'en' | 'ar' | 'tr';
 
 interface LanguageContextType {
   language: Language;
@@ -21,7 +21,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   // Initialize language from localStorage or default to English
   const [language, setLanguageState] = useState<Language>(() => {
     const saved = localStorage.getItem('language');
-    return (saved === 'ar' ? 'ar' : 'en') as Language;
+    return (saved === 'ar' || saved === 'tr' ? saved : 'en') as Language;
   });
 
   // Sync language changes to localStorage and document attributes

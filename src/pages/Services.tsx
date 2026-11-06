@@ -93,13 +93,13 @@ const Services = () => {
                 <li className="flex items-start">
                   <span className="text-primary mr-3">•</span>
                   <span dangerouslySetInnerHTML={{
-                  __html: t.payment2.replace('Cash', '<strong>Cash</strong>').replace('checks', '<strong>checks</strong>').replace('النقد', '<strong>النقد</strong>').replace('الشيكات', '<strong>الشيكات</strong>')
+                  __html: t.payment2.replace('Cash', '<strong>Cash</strong>').replace('checks', '<strong>checks</strong>').replace('النقد', '<strong>النقد</strong>').replace('الشيكات', '<strong>الشيكات</strong>').replace('Nakit', '<strong>Nakit</strong>').replace('çek', '<strong>çek</strong>')
                 }} />
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-3">•</span>
                   <span dangerouslySetInnerHTML={{
-                  __html: t.payment3.replace('not', '<strong>not</strong>').replace('لا', '<strong>لا</strong>')
+                  __html: t.payment3.replace('not', '<strong>not</strong>').replace('لا', '<strong>لا</strong>').replace('etmiyorum', '<strong>etmiyorum</strong>')
                 }} />
                 </li>
               </ul>

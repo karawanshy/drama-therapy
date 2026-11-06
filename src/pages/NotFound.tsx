@@ -3,8 +3,13 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Home, ArrowLeft } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/translations";
 
 const NotFound = () => {
+  const { language } = useLanguage();
+  const t = translations[language].notFound;
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -16,21 +21,21 @@ const NotFound = () => {
               404
             </h1>
             <h2 className="text-3xl md:text-4xl font-lora font-semibold mb-6 text-foreground animate-fade-in">
-              Page Not Found
+              {t.title}
             </h2>
             <p className="text-lg text-muted-foreground mb-8 animate-fade-in">
-              The page you're looking for doesn't exist or has been moved.
+              {t.description}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
               <Button asChild size="lg">
                 <Link to="/">
                   <Home className="mr-2 h-5 w-5" />
-                  Go Home
+                  {t.goHome}
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
                 <Link to="/contact">
-                  Contact Me
+                  {t.contactMe}
                 </Link>
               </Button>
             </div>
