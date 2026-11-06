@@ -40,7 +40,7 @@ const Home = () => {
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
             {/* Image */}
             <div className="w-full md:w-auto flex justify-center">
-              <img alt="Dr. Iman Kheil" loading="eager" fetchPriority="high" src={therapistImage} className="w-72 md:w-80 lg:w-96 h-auto object-cover rounded-none shadow-none" />
+              <img alt="Dr. Iman Kheil" loading="eager" fetchPriority="high" src={therapistImage} className="w-[202px] md:w-56 lg:w-[269px] h-auto object-cover rounded-none shadow-none" />
             </div>
             
             {/* Text */}
@@ -124,7 +124,7 @@ const Home = () => {
               {t.quote}
             </blockquote>
             <p className="text-lg text-muted-foreground animate-fade-in [animation-delay:200ms]">
-              {language === 'en' ? '— Dr. Iman Kheil' : '— د. ايمان كحيل'}
+              — {translations[language].common.name}
             </p>
           </div>
         </div>

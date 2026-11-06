@@ -32,13 +32,13 @@ const EMAILJS_CONFIG = {
 } as const;
 
 // Form Validation Schema
-const contactSchema = z.object({
-  name: z.string().trim().min(2, { message: "Name must be at least 2 characters" }).max(100),
-  email: z.string().trim().email({ message: "Please enter a valid email address" }).max(255),
-  message: z.string().trim().min(10, { message: "Message must be at least 10 characters" }).max(1000),
+const createContactSchema = (t: { nameTooShort: string; invalidEmail: string; messageTooShort: string }) => z.object({
+  name: z.string().trim().min(2, { message: t.nameTooShort }).max(100),
+  email: z.string().trim().email({ message: t.invalidEmail }).max(255),
+  message: z.string().trim().min(10, { message: t.messageTooShort }).max(1000),
 });
 
-type ContactFormValues = z.infer<typeof contactSchema>;
+type ContactFormValues = z.infer<ReturnType<typeof createContactSchema>>;
 
 const Contact = () => {
   // Hooks
@@ -58,7 +58,7 @@ const Contact = () => {
 
   // Form setup with validation
   const form = useForm<ContactFormValues>({
-    resolver: zodResolver(contactSchema),
+    resolver: zodResolver(createContactSchema(t)),
     defaultValues: {
       name: "",
       email: "",
@@ -90,10 +90,8 @@ const Contact = () => {
       
       // Show success message
       toast({
-        title: language === 'en' ? "Message sent!" : "تم إرسال الرسالة!",
-        description: language === 'en' 
-          ? "Thank you for reaching out. I'll get back to you soon." 
-          : "شكراً لتواصلك. سأرد عليك قريباً.",
+        title: t.successTitle,
+        description: t.successDesc,
       });
       
       // Reset form after successful submission
@@ -103,10 +101,8 @@ const Contact = () => {
       
       // Show error message
       toast({
-        title: language === 'en' ? "Error" : "خطأ",
-        description: language === 'en' 
-          ? "Failed to send message. Please try again." 
-          : "فشل إرسال الرسالة. يرجى المحاولة مرة أخرى.",
+        title: t.errorTitle,
+        description: t.errorDesc,
         variant: "destructive",
       });
     } finally {

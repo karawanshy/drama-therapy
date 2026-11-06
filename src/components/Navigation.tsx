@@ -59,7 +59,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20 bg-primary-foreground">
           <Link to="/" className="flex items-center space-x-2 transition-smooth hover:opacity-80">
             <h1 className="text-xl md:text-2xl font-lora font-bold text-primary bg-primary-foreground">
-              {language === 'en' ? 'Dr. Iman Kheil' : 'د. ايمان كحيل'}
+              {translations[language].common.name}
             </h1>
           </Link>
 
@@ -74,6 +74,9 @@ const Navigation = () => {
               </button>
               <button onClick={() => setLanguage('ar')} className={`text-sm px-3 py-2 rounded-lg transition-colors ${language === 'ar' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-secondary'}`}>
                 عربي
+              </button>
+              <button onClick={() => setLanguage('tr')} className={`text-sm px-3 py-2 rounded-lg transition-colors ${language === 'tr' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-secondary'}`}>
+                TR
               </button>
             </div>
           </div>
@@ -96,6 +99,9 @@ const Navigation = () => {
                 </button>
                 <button onClick={() => setLanguage('ar')} className={`flex-1 text-sm px-3 py-2 rounded-lg transition-colors ${language === 'ar' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-secondary'}`}>
                   العربية
+                </button>
+                <button onClick={() => setLanguage('tr')} className={`flex-1 text-sm px-3 py-2 rounded-lg transition-colors ${language === 'tr' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-secondary'}`}>
+                  Türkçe
                 </button>
               </div>
             </div>
